@@ -5,5 +5,7 @@
         <page name='两数相加'/>
         <page name='最长的回文子串'/>
         <page name='无重复字符的最长子串'/>
+        <page name='完美数'/>
+        <page name='反转链表'/>
     </pages>
 </playground>
