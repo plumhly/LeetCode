@@ -8,5 +8,20 @@
         <page name='完美数'/>
         <page name='反转链表'/>
         <page name='LRU缓存'/>
+        <page name='#7 整数反转'/>
+        <page name='#9 回文数'/>
+        <page name='#14 最长公共前缀'/>
+        <page name='#11 盛最多水的容器'/>
+        <page name='#15 三数之和'/>
+        <page name='求某范围内的质素'/>
+        <page name='# 16 最接近的三数之和'/>
+        <page name='# 20  有效的括号'/>
+        <page name='走楼梯'/>
+        <page name='找零钱'/>
+        <page name='21 合并两个有序链表'/>
+        <page name='26 删除排序数组中的重复项'/>
+        <page name='53. 最大子序和'/>
+        <page name='简单消消乐'/>
+        <page name='playground'/>
     </pages>
 </playground>
