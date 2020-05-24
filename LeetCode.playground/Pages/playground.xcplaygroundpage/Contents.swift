@@ -23,19 +23,32 @@ func mesure(clousure: () -> Void) {
 
 
 
-var map: Dictionary<(Int, Int), Int>
-func step(i: Int, j: Int) -> Int {
-    if i == 0 || j == 0 {
-        return 1
-    }
-    return step(i: i, j: j - 1) + step(i: i - 1, j: j)
+//var map: Dictionary<(Int, Int), Int>
+//func step(i: Int, j: Int) -> Int {
+//    if i == 0 || j == 0 {
+//        return 1
+//    }
+//    return step(i: i, j: j - 1) + step(i: i - 1, j: j)
+//}
+//
+//// 测试
+//assert(step(i: 1, j: 1) == 2)
+//assert(step(i: 2, j: 2) == 6)
+//
+//mesure {
+//   let result = step(i: 4, j: 4)
+//}
+
+var num = false
+//for i in sequence(first: 1, next: { value in
+//    print("Closure")
+//    print("\(num)")
+//   return value < 10 ? 2 * value : nil
+//}) {
+//    num = !num
+//    print("Loop: \(i)")
+//}
+
+for i in stride(from: 1, through: 0, by: -1) {
+    print(i)
 }
-
-// 测试
-assert(step(i: 1, j: 1) == 2)
-assert(step(i: 2, j: 2) == 6)
-
-mesure {
-   let result = step(i: 4, j: 4)
-}
-
