@@ -52,9 +52,9 @@ do {
     quickSort(numbers: &b)
     assert(b == [1])
     //
-    var c = [5, 4, 3, 2, 1]
+    var c = [5, 1, 4, 3, 2, 1]
     quickSort(numbers: &c)
-    assert(c == [1, 2, 3, 4, 5])
+    assert(c == [1, 1, 2, 3, 4, 5])
 }
 
 
@@ -280,14 +280,128 @@ func heapifySort(numbers: inout [Int]) {
     }
 }
 
+//
+//do {
+//    var c = [5, 4, 3, 2, 1]
+//    heapifySort(numbers: &c)
+//    assert(c == [1, 2, 3, 4, 5])
+//
+//    var d = [3, 4, 3, 7, 1]
+//    heapifySort(numbers: &d)
+//    assert(d == [1, 3, 3, 4, 7])
+//}
 
-do {
-    var c = [5, 4, 3, 2, 1]
-    heapifySort(numbers: &c)
-    assert(c == [1, 2, 3, 4, 5])
+struct Sort {
+    static func bubble(numbers: inout [Int]) {
+        guard numbers.count > 1 else { return }
+        
+        for i in 0..<numbers.count - 1 {
+            for j in 0..<numbers.count - 1 - i {
+                if numbers[j] > numbers[j + 1] {
+                    let temp = numbers[j + 1]
+                    numbers[j + 1] = numbers[j]
+                    numbers[j] = temp
+                }
+            }
+        }
+    }
     
-    var d = [3, 4, 3, 7, 1]
-    heapifySort(numbers: &d)
-    assert(d == [1, 3, 3, 4, 7])
+    static func choice(numbers: inout [Int]) {
+        guard numbers.count > 1 else { return }
+        
+        for i in 0..<numbers.count - 1 {
+            var minIndex = i
+            for j in i...numbers.count - 1 {
+                if numbers[j] < numbers[minIndex] {
+                    minIndex = j
+                }
+            }
+            if minIndex != i {
+                let temp = numbers[i]
+                numbers[i] = numbers[minIndex]
+                numbers[minIndex] = temp
+            }
+        }
+    }
+    
+    static func insert(numbers: inout [Int]) {
+        guard numbers.count > 1 else { return }
+        for i in 1..<numbers.count {
+            let temp = numbers[i]
+            var currentIndex = i - 1
+            while currentIndex >= 0 && numbers[currentIndex] > temp {
+                numbers[currentIndex + 1] = numbers[currentIndex]
+                currentIndex -= 1
+            }
+            numbers[currentIndex + 1] = temp
+        }
+    }
+    
+    static func counting(numbers: inout [Int]) {
+        guard numbers.count > 1, let max = numbers.max() else { return }
+        
+        var result = Array<Int>(repeating: 0, count: max + 1) // *
+        numbers.forEach { value in
+            result[value] = result[value] + 1
+        }
+        numbers.removeAll()
+        for (index, value) in result.enumerated() {
+            guard value > 0 else { continue }
+            for i in 0...value - 1 { //*
+                numbers.append(index)
+            }
+        }
+    }
+    
+    static func shell(numbers: inout [Int]) {
+        guard numbers.count > 1 else { return }
+
+        // * sequence
+        for i in sequence(first: numbers.count / 2, next: { $0 > 0 ? $0/2 : nil }) {
+            for j in i..<numbers.count {
+                var index = j
+                var temp = numbers[j] // 没有必要每次移动，找到最终的位置在移动
+                while index - i >= 0, numbers[index - i] > temp {
+                    numbers[index] = numbers[index - i]
+                    index -= i
+                }
+                numbers[index] = temp
+            }
+        }
+
+    }
+    
+    static func test() {
+        var a = [4, 3, 2, 1]
+        bubble(numbers: &a)
+        assert(a == [1, 2, 3, 4])
+        print("Sort 1")
+        a = [4, 3, 2, 1]
+        choice(numbers: &a)
+        assert(a == [1, 2, 3, 4])
+        print("Sort 2")
+        
+        a = [4, 3, 2, 1]
+        insert(numbers: &a)
+        print(a)
+        assert(a == [1, 2, 3, 4])
+        
+        a = [4, 3, 2, 1]
+        counting(numbers: &a)
+        print(a)
+        assert(a == [1, 2, 3, 4])
+        
+        a = [4, 3, 2, 1]
+        shell(numbers: &a)
+        print(a)
+        assert(a == [1, 2, 3, 4])
+        
+        print("Sort OVER")
+    }
 }
 
+Sort.test()
+
+for i in sequence(first: 16, next: { $0 > 0 ? $0/2 : nil }) {
+    print(i)
+}

@@ -39,7 +39,7 @@ func mesure(clousure: () -> Void) {
 //   let result = step(i: 4, j: 4)
 //}
 
-var num = false
+//var num = false
 //for i in sequence(first: 1, next: { value in
 //    print("Closure")
 //    print("\(num)")
@@ -49,6 +49,46 @@ var num = false
 //    print("Loop: \(i)")
 //}
 
-for i in stride(from: 1, through: 0, by: -1) {
-    print(i)
+//for i in stride(from: 1, through: 0, by: -1) {
+//    print(i)
+//}
+
+
+/***5. 25***/
+// 快排
+//
+//let c: Character = "a"
+//for i in String(c).unicodeScalars {
+//    print(i.value)
+//}
+//c.asciiValue
+
+//let c: Character = "0"
+//let assi = ("0" as Character).asciiValue! + 1
+//print(Character(UnicodeScalar(assi)))
+
+//var s = [1, 2, 3]
+//MemoryLayout.size(ofValue: s)
+//MemoryLayout.stride(ofValue: s)
+//MemoryLayout.alignment(ofValue: s)
+
+//let s = ""
+//s.startIndex == s.endIndex
+//
+//let d = "d"
+////d.startIndex == d.endIndex
+//let i = d.endIndex
+//d[i]
+
+let s = "ddfdfd"
+//for i in s.indices {
+//    print(s[i])
+//}
+//s.distance(from: s.startIndex, to: s.endIndex)
+//9...1
+for i in s.indices.reversed() {
+    print(s[i])
 }
+
+let c = 2 ^ 3
+let d = 2 ^ 2 ^ 3 ^ 1 ^ 1
