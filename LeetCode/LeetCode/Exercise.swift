@@ -1347,3 +1347,48 @@ extension Exercise {
         }
     }
 }
+
+extension Exercise {
+    static let maxValue = 6
+    struct E7_09 {
+        static func allPercentWithNumber(_ number: Int) {
+            guard number > 0 else {
+                return
+            }
+            
+            let count = number * maxValue + 1
+            
+            var result = Array<[Int]>(repeating: Array<Int>(repeating: 0, count: count), count: 2)
+            var flag = 0
+            for i in 1...maxValue {
+                result[flag][i] = 1
+            }
+            
+            for k in 2...number {
+                
+                for j in 0..<k {
+                    result[1-flag][j] = 0
+                }
+                
+                for i in k...(k * maxValue) {
+                    result[1-flag][i] = 0
+                    for j in 1..<i where j <= maxValue {
+                        result[1-flag][i] += result[flag][i - j]
+                    }
+                }
+                flag = 1 - flag
+            }
+            
+            let all = pow(Double(6), Double(number))
+            let finalResult = result[flag]
+            for i in number...(number * maxValue) {
+                print("\(i) percent: \(finalResult[i])/\(all)")
+            }
+            
+        }
+        
+        static func test() {
+            allPercentWithNumber(2)
+        }
+    }
+}

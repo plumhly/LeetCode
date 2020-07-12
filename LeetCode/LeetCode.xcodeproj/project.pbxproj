@@ -59,6 +59,15 @@
 		3884D23224B21DF100A812F7 /* 面试题57-和为s的数字.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884D23124B21DF100A812F7 /* 面试题57-和为s的数字.swift */; };
 		3884D23924B369A500A812F7 /* Topic58.m in Sources */ = {isa = PBXBuildFile; fileRef = 3884D23824B369A500A812F7 /* Topic58.m */; };
 		3884D23B24B4B3E600A812F7 /* 面试题59-队列的最大值.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884D23A24B4B3E600A812F7 /* 面试题59-队列的最大值.swift */; };
+		3884D23D24B5F9EE00A812F7 /* 面试题60-n个骰子的点数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884D23C24B5F9EE00A812F7 /* 面试题60-n个骰子的点数.swift */; };
+		3884D23F24B69CD700A812F7 /* 面试题61-扑克牌中的顺子.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884D23E24B69CD700A812F7 /* 面试题61-扑克牌中的顺子.swift */; };
+		3884D24124B761E300A812F7 /* 面试题62-圆圈中最后剩下的数字.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884D24024B761E300A812F7 /* 面试题62-圆圈中最后剩下的数字.swift */; };
+		3884D24324B8BB2D00A812F7 /* 面试题63-股票的最大利润.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884D24224B8BB2D00A812F7 /* 面试题63-股票的最大利润.swift */; };
+		3884D24524B8C05400A812F7 /* 面试题64-求1+2+……+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884D24424B8C05400A812F7 /* 面试题64-求1+2+……+.swift */; };
+		3884D24724B8C71600A812F7 /* 面试题65-不用加减乘除做加法.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884D24624B8C71600A812F7 /* 面试题65-不用加减乘除做加法.swift */; };
+		3884D24924BA07D200A812F7 /* 面试题66-构建乘积数组.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884D24824BA07D200A812F7 /* 面试题66-构建乘积数组.swift */; };
+		3884D24B24BA0F1200A812F7 /* 面试题 67 写一个string转Int的方法.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884D24A24BA0F1200A812F7 /* 面试题 67 写一个string转Int的方法.swift */; };
+		3884D24D24BAAE7D00A812F7 /* (面试题68)树中两个节点的最低公共祖先.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884D24C24BAAE7D00A812F7 /* (面试题68)树中两个节点的最低公共祖先.swift */; };
 		38FA0C1C247C1C5D006B8C49 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C1B247C1C5D006B8C49 /* Exercise.swift */; };
 		38FA0C1E247CA2B3006B8C49 /* 面试题4二维数组查找.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C1D247CA2B3006B8C49 /* 面试题4二维数组查找.swift */; };
 		38FA0C22247EBDB3006B8C49 /* StringOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C21247EBDB3006B8C49 /* StringOperation.m */; };
@@ -139,6 +148,15 @@
 		3884D23724B369A500A812F7 /* Topic58.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Topic58.h; sourceTree = "<group>"; };
 		3884D23824B369A500A812F7 /* Topic58.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Topic58.m; sourceTree = "<group>"; };
 		3884D23A24B4B3E600A812F7 /* 面试题59-队列的最大值.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题59-队列的最大值.swift"; sourceTree = "<group>"; };
+		3884D23C24B5F9EE00A812F7 /* 面试题60-n个骰子的点数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题60-n个骰子的点数.swift"; sourceTree = "<group>"; };
+		3884D23E24B69CD700A812F7 /* 面试题61-扑克牌中的顺子.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题61-扑克牌中的顺子.swift"; sourceTree = "<group>"; };
+		3884D24024B761E300A812F7 /* 面试题62-圆圈中最后剩下的数字.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题62-圆圈中最后剩下的数字.swift"; sourceTree = "<group>"; };
+		3884D24224B8BB2D00A812F7 /* 面试题63-股票的最大利润.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题63-股票的最大利润.swift"; sourceTree = "<group>"; };
+		3884D24424B8C05400A812F7 /* 面试题64-求1+2+……+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题64-求1+2+……+.swift"; sourceTree = "<group>"; };
+		3884D24624B8C71600A812F7 /* 面试题65-不用加减乘除做加法.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题65-不用加减乘除做加法.swift"; sourceTree = "<group>"; };
+		3884D24824BA07D200A812F7 /* 面试题66-构建乘积数组.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题66-构建乘积数组.swift"; sourceTree = "<group>"; };
+		3884D24A24BA0F1200A812F7 /* 面试题 67 写一个string转Int的方法.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题 67 写一个string转Int的方法.swift"; sourceTree = "<group>"; };
+		3884D24C24BAAE7D00A812F7 /* (面试题68)树中两个节点的最低公共祖先.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "(面试题68)树中两个节点的最低公共祖先.swift"; sourceTree = "<group>"; };
 		38FA0C1B247C1C5D006B8C49 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		38FA0C1D247CA2B3006B8C49 /* 面试题4二维数组查找.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题4二维数组查找.swift"; sourceTree = "<group>"; };
 		38FA0C1F247EBDB3006B8C49 /* LeetCode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeetCode-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -251,6 +269,15 @@
 				3884D23724B369A500A812F7 /* Topic58.h */,
 				3884D23824B369A500A812F7 /* Topic58.m */,
 				3884D23A24B4B3E600A812F7 /* 面试题59-队列的最大值.swift */,
+				3884D23C24B5F9EE00A812F7 /* 面试题60-n个骰子的点数.swift */,
+				3884D23E24B69CD700A812F7 /* 面试题61-扑克牌中的顺子.swift */,
+				3884D24024B761E300A812F7 /* 面试题62-圆圈中最后剩下的数字.swift */,
+				3884D24224B8BB2D00A812F7 /* 面试题63-股票的最大利润.swift */,
+				3884D24424B8C05400A812F7 /* 面试题64-求1+2+……+.swift */,
+				3884D24624B8C71600A812F7 /* 面试题65-不用加减乘除做加法.swift */,
+				3884D24824BA07D200A812F7 /* 面试题66-构建乘积数组.swift */,
+				3884D24A24BA0F1200A812F7 /* 面试题 67 写一个string转Int的方法.swift */,
+				3884D24C24BAAE7D00A812F7 /* (面试题68)树中两个节点的最低公共祖先.swift */,
 				38FA0C20247EBDB3006B8C49 /* StringOperation.h */,
 				38FA0C21247EBDB3006B8C49 /* StringOperation.m */,
 				380ABDAE248FD3A2004DE3D2 /* CPlus.h */,
@@ -330,10 +357,12 @@
 				3884D21424A6395700A812F7 /* 面试题42-连续子数组的最大和.swift in Sources */,
 				3884D22C24B0588100A812F7 /* 面试题54-二叉搜索树的第k大节点.swift in Sources */,
 				380ABDA4248BD4FB004DE3D2 /* 面试题13-机器人的运动范围.swift in Sources */,
+				3884D24D24BAAE7D00A812F7 /* (面试题68)树中两个节点的最低公共祖先.swift in Sources */,
 				38453677247978F000F0BAD2 /* main.swift in Sources */,
 				38FA0C1C247C1C5D006B8C49 /* Exercise.swift in Sources */,
 				382008532497C32E004B74E6 /* 面试题24-反转链表.swift in Sources */,
 				383FAF41249A61DA0028DA22 /* 面试题28-对称的二叉树.swift in Sources */,
+				3884D23D24B5F9EE00A812F7 /* 面试题60-n个骰子的点数.swift in Sources */,
 				383FAF45249D01DD0028DA22 /* 面试题30-包含min函数的栈.swift in Sources */,
 				3884D22E24B0CFE300A812F7 /* 面试题55-二叉树的深度.swift in Sources */,
 				383FAF5724A240150028DA22 /* 面试题36-二叉搜索树与双向链表.swift in Sources */,
@@ -342,10 +371,13 @@
 				3884D23024B17D8900A812F7 /* 面试题56-数组中数字出现的次数.swift in Sources */,
 				38FA0C26248091C4006B8C49 /* 🌲的遍历.swift in Sources */,
 				380ABDB424927084004DE3D2 /* 面试题18-删除链表的节点.swift in Sources */,
+				3884D23F24B69CD700A812F7 /* 面试题61-扑克牌中的顺子.swift in Sources */,
 				380ABDB82494A9A3004DE3D2 /* 面试题20-表示数值的字符串.swift in Sources */,
 				3884D20D24A4EF3600A812F7 /* 面试题39-数组中出现次数超过一半的数字.swift in Sources */,
 				380ABDA6248CED34004DE3D2 /* 面试题14-剪绳子.swift in Sources */,
 				383FAF43249A6F0E0028DA22 /* 面试题29-顺时针打印矩阵.swift in Sources */,
+				3884D24124B761E300A812F7 /* 面试题62-圆圈中最后剩下的数字.swift in Sources */,
+				3884D24324B8BB2D00A812F7 /* 面试题63-股票的最大利润.swift in Sources */,
 				3884D20F24A5A2B200A812F7 /* 面试题40-最小的k个数.swift in Sources */,
 				3884D22A24B02BE600A812F7 /* 面试题53-在排序数组中查找数字.swift in Sources */,
 				380ABDB0248FD3A2004DE3D2 /* CPlus.mm in Sources */,
@@ -354,14 +386,17 @@
 				380ABDB62493CAE9004DE3D2 /* 面试题19-正则表达式匹配.swift in Sources */,
 				3884D22424AC14CC00A812F7 /* 面试题50-第一个只出现一次的字符.swift in Sources */,
 				38FA0C2424801227006B8C49 /* 面试题6 从头到尾打印链表.swift in Sources */,
+				3884D24524B8C05400A812F7 /* 面试题64-求1+2+……+.swift in Sources */,
 				3884D22224AB902600A812F7 /* 面试题49-丑数.swift in Sources */,
 				380ABDA8248CF767004DE3D2 /* 面试题15-二进制中1的个数.swift in Sources */,
 				38417DA724990EB400F0E6C4 /* 面试题26 树的子结构.swift in Sources */,
 				3884D21A24A791DE00A812F7 /* 面试题45-把数组排成最小的数.swift in Sources */,
 				380ABDBC24965C69004DE3D2 /* 面试题22-链表中倒数第k个节点.swift in Sources */,
 				383FAF47249D0D530028DA22 /* 面试题31-栈的压入和弹出序列.swift in Sources */,
+				3884D24724B8C71600A812F7 /* 面试题65-不用加减乘除做加法.swift in Sources */,
 				3884D21624A63E0A00A812F7 /* 面试题43-1~n整数中1出现的次数.swift in Sources */,
 				380ABDBA2495E74F004DE3D2 /* 面试题21-调整数组顺序使奇数位于偶数前面.swift in Sources */,
+				3884D24B24BA0F1200A812F7 /* 面试题 67 写一个string转Int的方法.swift in Sources */,
 				3884D23224B21DF100A812F7 /* 面试题57-和为s的数字.swift in Sources */,
 				383FAF5924A25A540028DA22 /* 面试题37-序列化二又树.swift in Sources */,
 				3884D21C24A8F08800A812F7 /* 面试题46-把数字翻译成字符串.swift in Sources */,
@@ -379,6 +414,7 @@
 				38453682247A635300F0BAD2 /* 面试题3 重复数组问题.swift in Sources */,
 				380ABDAA248D3576004DE3D2 /* 面试题16-数值的整数次方.swift in Sources */,
 				383FAF55249FA68F0028DA22 /* 面试题35-复杂链表的复制.swift in Sources */,
+				3884D24924BA07D200A812F7 /* 面试题66-构建乘积数组.swift in Sources */,
 				383FAF53249F9B410028DA22 /* 面试题34-二叉树中和为某一值的路径.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
