@@ -22,12 +22,13 @@ import Foundation
  最后需要注意的是,如果链表中只有一个节点,而我们又要删除链表的头节点(也是尾节点),那么,此时我们在删除节点之后,还需要把链表的头节点设置为 nullptr
  */
 
-class Node {
+class Node: NSObject {
     var value: Int
     var next: Node?
     init(value: Int, next: Node?) {
-       self.value = value
-       self.next = next
+        self.value = value
+        self.next = next
+        super.init()
     }
     
     var values: [Int]? {
@@ -38,6 +39,16 @@ class Node {
             this = this?.next
         }
         return result
+    }
+    
+    var count: Int {
+        var length = 0
+        var node: Node? = self
+        while node != nil {
+            length += 1
+            node = node?.next
+        }
+        return length
     }
     
 }

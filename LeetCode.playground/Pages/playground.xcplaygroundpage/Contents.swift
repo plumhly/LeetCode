@@ -86,9 +86,22 @@ let s = "ddfdfd"
 //}
 //s.distance(from: s.startIndex, to: s.endIndex)
 //9...1
-for i in s.indices.reversed() {
-    print(s[i])
-}
+//for i in s.indices.reversed() {
+//    print(s[i])
+//}
+//
+//let c = 2 ^ 3
+//let d = 2 ^ 2 ^ 3 ^ 1 ^ 1
+//var a: [Int] = []
+//a.insert(1, at: 1)
+s.startIndex
 
-let c = 2 ^ 3
-let d = 2 ^ 2 ^ 3 ^ 1 ^ 1
+//for i in 0...4 {
+//    if i == 3 {
+//        break
+//    }
+//    print(i)
+//}
+
+let v1: UInt = 1
+let v2 = v1 << 1
