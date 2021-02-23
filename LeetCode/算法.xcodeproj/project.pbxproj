@@ -90,6 +90,7 @@
 		3884D24D24BAAE7D00A812F7 /* (面试题68)树中两个节点的最低公共祖先.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884D24C24BAAE7D00A812F7 /* (面试题68)树中两个节点的最低公共祖先.swift */; };
 		38BAF27D25E2322F00C8A48C /* 6 素性检查.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BAF27C25E2322F00C8A48C /* 6 素性检查.swift */; };
 		38BAF28225E2358200C8A48C /* 6 生成素数序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BAF28125E2358200C8A48C /* 6 生成素数序列.swift */; };
+		38BAF28625E53BCB00C8A48C /* 6.1 较重的药丸.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BAF28525E53BCB00C8A48C /* 6.1 较重的药丸.swift */; };
 		38FA0C1C247C1C5D006B8C49 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C1B247C1C5D006B8C49 /* Exercise.swift */; };
 		38FA0C1E247CA2B3006B8C49 /* 面试题4二维数组查找.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C1D247CA2B3006B8C49 /* 面试题4二维数组查找.swift */; };
 		38FA0C22247EBDB3006B8C49 /* StringOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C21247EBDB3006B8C49 /* StringOperation.m */; };
@@ -201,6 +202,7 @@
 		3884D24C24BAAE7D00A812F7 /* (面试题68)树中两个节点的最低公共祖先.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "(面试题68)树中两个节点的最低公共祖先.swift"; sourceTree = "<group>"; };
 		38BAF27C25E2322F00C8A48C /* 6 素性检查.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6 素性检查.swift"; sourceTree = "<group>"; };
 		38BAF28125E2358200C8A48C /* 6 生成素数序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6 生成素数序列.swift"; sourceTree = "<group>"; };
+		38BAF28525E53BCB00C8A48C /* 6.1 较重的药丸.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6.1 较重的药丸.swift"; sourceTree = "<group>"; };
 		38FA0C1B247C1C5D006B8C49 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		38FA0C1D247CA2B3006B8C49 /* 面试题4二维数组查找.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题4二维数组查找.swift"; sourceTree = "<group>"; };
 		38FA0C1F247EBDB3006B8C49 /* LeetCode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeetCode-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 			children = (
 				38BAF27C25E2322F00C8A48C /* 6 素性检查.swift */,
 				38BAF28125E2358200C8A48C /* 6 生成素数序列.swift */,
+				38BAF28525E53BCB00C8A48C /* 6.1 较重的药丸.swift */,
 			);
 			path = "第六章 数学逻辑";
 			sourceTree = "<group>";
@@ -560,6 +563,7 @@
 				38FA0C1E247CA2B3006B8C49 /* 面试题4二维数组查找.swift in Sources */,
 				380ABDB2248FDB6B004DE3D2 /* 面试题17-打印从1到最大的n位数.swift in Sources */,
 				3884D21824A72EFE00A812F7 /* 面试题44-数字序列中某一位的数字.swift in Sources */,
+				38BAF28625E53BCB00C8A48C /* 6.1 较重的药丸.swift in Sources */,
 				383FAF5B24A3A4330028DA22 /* 面试题38-字符串的排列.swift in Sources */,
 				38832ED624E2EC6000B48BAC /* 2.4 链表分割.swift in Sources */,
 				382008572497CB23004B74E6 /* 面试题25-合并两个排序的链表.swift in Sources */,
