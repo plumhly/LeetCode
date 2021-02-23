@@ -247,3 +247,4 @@ struct Fast {
 //Interview_2_6.test()
 //Interview_2_7.test()
 Interview_2_8.test()
+PrimeSequence.test()
