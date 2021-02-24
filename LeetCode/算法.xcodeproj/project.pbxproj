@@ -44,6 +44,8 @@
 		38612BEB24EC29C800EF3B3E /* 2.6 回文链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38612BEA24EC29C800EF3B3E /* 2.6 回文链表.swift */; };
 		38612BED24F15CEB00EF3B3E /* 2.7 链表相交.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38612BEC24F15CEB00EF3B3E /* 2.7 链表相交.swift */; };
 		38612BEF24F24A6600EF3B3E /* 2.8 环路检查.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38612BEE24F24A6600EF3B3E /* 2.8 环路检查.swift */; };
+		3864BC5125E68BA100E1A336 /* 6.2 篮球问题.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864BC5025E68BA100E1A336 /* 6.2 篮球问题.swift */; };
+		3864BC5425E68F4F00E1A336 /* 6.3 多米诺骨牌.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864BC5325E68F4F00E1A336 /* 6.3 多米诺骨牌.swift */; };
 		38832EB924D30ABE00B48BAC /* 1.1 判定字符是否唯一.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38832EB824D30ABE00B48BAC /* 1.1 判定字符是否唯一.swift */; };
 		38832EBC24D5158400B48BAC /* BitMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38832EBB24D5158400B48BAC /* BitMap.swift */; };
 		38832EBE24D55E4700B48BAC /* 1.2 判断是否互为字符串重排.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38832EBD24D55E4700B48BAC /* 1.2 判断是否互为字符串重排.swift */; };
@@ -155,6 +157,8 @@
 		38612BEA24EC29C800EF3B3E /* 2.6 回文链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.6 回文链表.swift"; sourceTree = "<group>"; };
 		38612BEC24F15CEB00EF3B3E /* 2.7 链表相交.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.7 链表相交.swift"; sourceTree = "<group>"; };
 		38612BEE24F24A6600EF3B3E /* 2.8 环路检查.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.8 环路检查.swift"; sourceTree = "<group>"; };
+		3864BC5025E68BA100E1A336 /* 6.2 篮球问题.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6.2 篮球问题.swift"; sourceTree = "<group>"; };
+		3864BC5325E68F4F00E1A336 /* 6.3 多米诺骨牌.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6.3 多米诺骨牌.swift"; sourceTree = "<group>"; };
 		38832EB824D30ABE00B48BAC /* 1.1 判定字符是否唯一.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.1 判定字符是否唯一.swift"; sourceTree = "<group>"; };
 		38832EBB24D5158400B48BAC /* BitMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMap.swift; sourceTree = "<group>"; };
 		38832EBD24D55E4700B48BAC /* 1.2 判断是否互为字符串重排.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.2 判断是否互为字符串重排.swift"; sourceTree = "<group>"; };
@@ -424,6 +428,8 @@
 				38BAF27C25E2322F00C8A48C /* 6 素性检查.swift */,
 				38BAF28125E2358200C8A48C /* 6 生成素数序列.swift */,
 				38BAF28525E53BCB00C8A48C /* 6.1 较重的药丸.swift */,
+				3864BC5025E68BA100E1A336 /* 6.2 篮球问题.swift */,
+				3864BC5325E68F4F00E1A336 /* 6.3 多米诺骨牌.swift */,
 			);
 			path = "第六章 数学逻辑";
 			sourceTree = "<group>";
@@ -499,6 +505,7 @@
 				3884D21424A6395700A812F7 /* 面试题42-连续子数组的最大和.swift in Sources */,
 				38832EC224D701DF00B48BAC /* 1.4 回文排列.swift in Sources */,
 				3884D22C24B0588100A812F7 /* 面试题54-二叉搜索树的第k大节点.swift in Sources */,
+				3864BC5125E68BA100E1A336 /* 6.2 篮球问题.swift in Sources */,
 				38832EB924D30ABE00B48BAC /* 1.1 判定字符是否唯一.swift in Sources */,
 				38612BED24F15CEB00EF3B3E /* 2.7 链表相交.swift in Sources */,
 				380ABDA4248BD4FB004DE3D2 /* 面试题13-机器人的运动范围.swift in Sources */,
@@ -560,6 +567,7 @@
 				3884D23B24B4B3E600A812F7 /* 面试题59-队列的最大值.swift in Sources */,
 				380ABDA2248B8689004DE3D2 /* 面试题12-矩阵中的路径.swift in Sources */,
 				38832ED824E4C8AF00B48BAC /* 2.5 链表求和.swift in Sources */,
+				3864BC5425E68F4F00E1A336 /* 6.3 多米诺骨牌.swift in Sources */,
 				38FA0C1E247CA2B3006B8C49 /* 面试题4二维数组查找.swift in Sources */,
 				380ABDB2248FDB6B004DE3D2 /* 面试题17-打印从1到最大的n位数.swift in Sources */,
 				3884D21824A72EFE00A812F7 /* 面试题44-数字序列中某一位的数字.swift in Sources */,
