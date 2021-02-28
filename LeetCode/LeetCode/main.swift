@@ -248,3 +248,4 @@ struct Fast {
 //Interview_2_7.test()
 Interview_2_8.test()
 PrimeSequence.test()
+print(Generation.generaion(with: 1000))

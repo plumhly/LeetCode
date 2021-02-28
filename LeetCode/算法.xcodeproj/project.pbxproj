@@ -46,6 +46,13 @@
 		38612BEF24F24A6600EF3B3E /* 2.8 环路检查.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38612BEE24F24A6600EF3B3E /* 2.8 环路检查.swift */; };
 		3864BC5125E68BA100E1A336 /* 6.2 篮球问题.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864BC5025E68BA100E1A336 /* 6.2 篮球问题.swift */; };
 		3864BC5425E68F4F00E1A336 /* 6.3 多米诺骨牌.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864BC5325E68F4F00E1A336 /* 6.3 多米诺骨牌.swift */; };
+		3864BC5725E7E14300E1A336 /* 6.4 三角形上的蚂蚁.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864BC5625E7E14300E1A336 /* 6.4 三角形上的蚂蚁.swift */; };
+		3864BC5A25E7E42B00E1A336 /* 6.5 水壶问题.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864BC5925E7E42B00E1A336 /* 6.5 水壶问题.swift */; };
+		3864BC5D25E7E66600E1A336 /* 6.6 蓝眸岛.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864BC5C25E7E66600E1A336 /* 6.6 蓝眸岛.swift */; };
+		3864BC6025E7E79400E1A336 /* 6.7 大灾难.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864BC5F25E7E79400E1A336 /* 6.7 大灾难.swift */; };
+		3864BC6325E7E7F800E1A336 /* 6.8 扔鸡蛋问题.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864BC6225E7E7F800E1A336 /* 6.8 扔鸡蛋问题.swift */; };
+		3864BC6625E7E82700E1A336 /* 6.9 100个存储柜.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864BC6525E7E82700E1A336 /* 6.9 100个存储柜.swift */; };
+		3864BC6925E7E83D00E1A336 /* 6.10 有毒的苏打水.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3864BC6825E7E83D00E1A336 /* 6.10 有毒的苏打水.swift */; };
 		38832EB924D30ABE00B48BAC /* 1.1 判定字符是否唯一.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38832EB824D30ABE00B48BAC /* 1.1 判定字符是否唯一.swift */; };
 		38832EBC24D5158400B48BAC /* BitMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38832EBB24D5158400B48BAC /* BitMap.swift */; };
 		38832EBE24D55E4700B48BAC /* 1.2 判断是否互为字符串重排.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38832EBD24D55E4700B48BAC /* 1.2 判断是否互为字符串重排.swift */; };
@@ -159,6 +166,13 @@
 		38612BEE24F24A6600EF3B3E /* 2.8 环路检查.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.8 环路检查.swift"; sourceTree = "<group>"; };
 		3864BC5025E68BA100E1A336 /* 6.2 篮球问题.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6.2 篮球问题.swift"; sourceTree = "<group>"; };
 		3864BC5325E68F4F00E1A336 /* 6.3 多米诺骨牌.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6.3 多米诺骨牌.swift"; sourceTree = "<group>"; };
+		3864BC5625E7E14300E1A336 /* 6.4 三角形上的蚂蚁.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6.4 三角形上的蚂蚁.swift"; sourceTree = "<group>"; };
+		3864BC5925E7E42B00E1A336 /* 6.5 水壶问题.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6.5 水壶问题.swift"; sourceTree = "<group>"; };
+		3864BC5C25E7E66600E1A336 /* 6.6 蓝眸岛.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6.6 蓝眸岛.swift"; sourceTree = "<group>"; };
+		3864BC5F25E7E79400E1A336 /* 6.7 大灾难.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6.7 大灾难.swift"; sourceTree = "<group>"; };
+		3864BC6225E7E7F800E1A336 /* 6.8 扔鸡蛋问题.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6.8 扔鸡蛋问题.swift"; sourceTree = "<group>"; };
+		3864BC6525E7E82700E1A336 /* 6.9 100个存储柜.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6.9 100个存储柜.swift"; sourceTree = "<group>"; };
+		3864BC6825E7E83D00E1A336 /* 6.10 有毒的苏打水.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6.10 有毒的苏打水.swift"; sourceTree = "<group>"; };
 		38832EB824D30ABE00B48BAC /* 1.1 判定字符是否唯一.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.1 判定字符是否唯一.swift"; sourceTree = "<group>"; };
 		38832EBB24D5158400B48BAC /* BitMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMap.swift; sourceTree = "<group>"; };
 		38832EBD24D55E4700B48BAC /* 1.2 判断是否互为字符串重排.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.2 判断是否互为字符串重排.swift"; sourceTree = "<group>"; };
@@ -430,6 +444,13 @@
 				38BAF28525E53BCB00C8A48C /* 6.1 较重的药丸.swift */,
 				3864BC5025E68BA100E1A336 /* 6.2 篮球问题.swift */,
 				3864BC5325E68F4F00E1A336 /* 6.3 多米诺骨牌.swift */,
+				3864BC5625E7E14300E1A336 /* 6.4 三角形上的蚂蚁.swift */,
+				3864BC5925E7E42B00E1A336 /* 6.5 水壶问题.swift */,
+				3864BC5C25E7E66600E1A336 /* 6.6 蓝眸岛.swift */,
+				3864BC5F25E7E79400E1A336 /* 6.7 大灾难.swift */,
+				3864BC6225E7E7F800E1A336 /* 6.8 扔鸡蛋问题.swift */,
+				3864BC6525E7E82700E1A336 /* 6.9 100个存储柜.swift */,
+				3864BC6825E7E83D00E1A336 /* 6.10 有毒的苏打水.swift */,
 			);
 			path = "第六章 数学逻辑";
 			sourceTree = "<group>";
@@ -494,6 +515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3884D23924B369A500A812F7 /* Topic58.m in Sources */,
+				3864BC5A25E7E42B00E1A336 /* 6.5 水壶问题.swift in Sources */,
 				3884D21E24AA39A700A812F7 /* 面试题47-礼物的最大价值.swift in Sources */,
 				3884D22024AB783900A812F7 /* 面试题48-最长不含重复字符的子字符串.swift in Sources */,
 				38FA0C22247EBDB3006B8C49 /* StringOperation.m in Sources */,
@@ -524,6 +546,7 @@
 				38BAF27D25E2322F00C8A48C /* 6 素性检查.swift in Sources */,
 				3884D22E24B0CFE300A812F7 /* 面试题55-二叉树的深度.swift in Sources */,
 				383FAF5724A240150028DA22 /* 面试题36-二叉搜索树与双向链表.swift in Sources */,
+				3864BC6025E7E79400E1A336 /* 6.7 大灾难.swift in Sources */,
 				38FA0C2E2487E69B006B8C49 /* 面试题10-斐波那契数列.swift in Sources */,
 				38FA0C2A2483E4B8006B8C49 /* 面试8 二叉树的下一个节点.swift in Sources */,
 				3884D23024B17D8900A812F7 /* 面试题56-数组中数字出现的次数.swift in Sources */,
@@ -531,6 +554,7 @@
 				380ABDB424927084004DE3D2 /* 面试题18-删除链表的节点.swift in Sources */,
 				3884D23F24B69CD700A812F7 /* 面试题61-扑克牌中的顺子.swift in Sources */,
 				381EAA5B24BF529A004415CA /* Prim.swift in Sources */,
+				3864BC6325E7E7F800E1A336 /* 6.8 扔鸡蛋问题.swift in Sources */,
 				380ABDB82494A9A3004DE3D2 /* 面试题20-表示数值的字符串.swift in Sources */,
 				3884D20D24A4EF3600A812F7 /* 面试题39-数组中出现次数超过一半的数字.swift in Sources */,
 				380ABDA6248CED34004DE3D2 /* 面试题14-剪绳子.swift in Sources */,
@@ -543,10 +567,12 @@
 				380ABDBE2497B130004DE3D2 /* 面试题23-链表中环的入口节点.swift in Sources */,
 				383FAF4F249F34B20028DA22 /* 面试题32-从上到下打印二叉树.swift in Sources */,
 				38832EBE24D55E4700B48BAC /* 1.2 判断是否互为字符串重排.swift in Sources */,
+				3864BC5725E7E14300E1A336 /* 6.4 三角形上的蚂蚁.swift in Sources */,
 				380ABDB62493CAE9004DE3D2 /* 面试题19-正则表达式匹配.swift in Sources */,
 				3884D22424AC14CC00A812F7 /* 面试题50-第一个只出现一次的字符.swift in Sources */,
 				38832EC624D999F600B48BAC /* 1.6 字符串压缩.swift in Sources */,
 				38832EBC24D5158400B48BAC /* BitMap.swift in Sources */,
+				3864BC6925E7E83D00E1A336 /* 6.10 有毒的苏打水.swift in Sources */,
 				38FA0C2424801227006B8C49 /* 面试题6 从头到尾打印链表.swift in Sources */,
 				3884D24524B8C05400A812F7 /* 面试题64-求1+2+……+.swift in Sources */,
 				38832ED024E037E800B48BAC /* 2.1 移除重复节点.swift in Sources */,
@@ -570,6 +596,7 @@
 				3864BC5425E68F4F00E1A336 /* 6.3 多米诺骨牌.swift in Sources */,
 				38FA0C1E247CA2B3006B8C49 /* 面试题4二维数组查找.swift in Sources */,
 				380ABDB2248FDB6B004DE3D2 /* 面试题17-打印从1到最大的n位数.swift in Sources */,
+				3864BC6625E7E82700E1A336 /* 6.9 100个存储柜.swift in Sources */,
 				3884D21824A72EFE00A812F7 /* 面试题44-数字序列中某一位的数字.swift in Sources */,
 				38BAF28625E53BCB00C8A48C /* 6.1 较重的药丸.swift in Sources */,
 				383FAF5B24A3A4330028DA22 /* 面试题38-字符串的排列.swift in Sources */,
@@ -579,6 +606,7 @@
 				38BAF28225E2358200C8A48C /* 6 生成素数序列.swift in Sources */,
 				38FA0C282483A38E006B8C49 /* 面试题7重建二叉树.swift in Sources */,
 				38832EC024D5B69100B48BAC /* 1.3 URL化.swift in Sources */,
+				3864BC5D25E7E66600E1A336 /* 6.6 蓝眸岛.swift in Sources */,
 				3845367F2479793600F0BAD2 /* Sort.swift in Sources */,
 				38FA0C2C2486AC05006B8C49 /* 面试题9-用两个栈实现队列.swift in Sources */,
 				38453682247A635300F0BAD2 /* 面试题3 重复数组问题.swift in Sources */,
