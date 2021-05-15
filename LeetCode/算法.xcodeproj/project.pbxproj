@@ -21,6 +21,8 @@
 		380ABDBA2495E74F004DE3D2 /* 面试题21-调整数组顺序使奇数位于偶数前面.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380ABDB92495E74F004DE3D2 /* 面试题21-调整数组顺序使奇数位于偶数前面.swift */; };
 		380ABDBC24965C69004DE3D2 /* 面试题22-链表中倒数第k个节点.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380ABDBB24965C69004DE3D2 /* 面试题22-链表中倒数第k个节点.swift */; };
 		380ABDBE2497B130004DE3D2 /* 面试题23-链表中环的入口节点.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380ABDBD2497B130004DE3D2 /* 面试题23-链表中环的入口节点.swift */; };
+		381944FB264FADF1000D4C03 /* 8.11 硬币.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381944FA264FADF1000D4C03 /* 8.11 硬币.swift */; };
+		381944FD264FBF72000D4C03 /* 8.12 八皇后.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381944FC264FBF72000D4C03 /* 8.12 八皇后.swift */; };
 		381EAA5B24BF529A004415CA /* Prim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381EAA5A24BF529A004415CA /* Prim.swift */; };
 		381EAA5F24C5DFAF004415CA /* 算法2.6 基于堆的优先级队列.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381EAA5E24C5DFAF004415CA /* 算法2.6 基于堆的优先级队列.swift */; };
 		382008532497C32E004B74E6 /* 面试题24-反转链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382008522497C32E004B74E6 /* 面试题24-反转链表.swift */; };
@@ -46,6 +48,8 @@
 		38453677247978F000F0BAD2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38453676247978F000F0BAD2 /* main.swift */; };
 		3845367F2479793600F0BAD2 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3845367E2479793600F0BAD2 /* Sort.swift */; };
 		38453682247A635300F0BAD2 /* 面试题3 重复数组问题.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38453681247A635300F0BAD2 /* 面试题3 重复数组问题.swift */; };
+		385EC45B264603B500AE1B76 /* 8.9 括号.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385EC45A264603B500AE1B76 /* 8.9 括号.swift */; };
+		385EC45D26460CD400AE1B76 /* 8.10 颜色填充.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385EC45C26460CD400AE1B76 /* 8.10 颜色填充.swift */; };
 		38612BEB24EC29C800EF3B3E /* 2.6 回文链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38612BEA24EC29C800EF3B3E /* 2.6 回文链表.swift */; };
 		38612BED24F15CEB00EF3B3E /* 2.7 链表相交.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38612BEC24F15CEB00EF3B3E /* 2.7 链表相交.swift */; };
 		38612BEF24F24A6600EF3B3E /* 2.8 环路检查.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38612BEE24F24A6600EF3B3E /* 2.8 环路检查.swift */; };
@@ -148,6 +152,8 @@
 		380ABDB92495E74F004DE3D2 /* 面试题21-调整数组顺序使奇数位于偶数前面.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题21-调整数组顺序使奇数位于偶数前面.swift"; sourceTree = "<group>"; };
 		380ABDBB24965C69004DE3D2 /* 面试题22-链表中倒数第k个节点.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题22-链表中倒数第k个节点.swift"; sourceTree = "<group>"; };
 		380ABDBD2497B130004DE3D2 /* 面试题23-链表中环的入口节点.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题23-链表中环的入口节点.swift"; sourceTree = "<group>"; };
+		381944FA264FADF1000D4C03 /* 8.11 硬币.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "8.11 硬币.swift"; sourceTree = "<group>"; };
+		381944FC264FBF72000D4C03 /* 8.12 八皇后.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "8.12 八皇后.swift"; sourceTree = "<group>"; };
 		381EAA5A24BF529A004415CA /* Prim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prim.swift; sourceTree = "<group>"; };
 		381EAA5E24C5DFAF004415CA /* 算法2.6 基于堆的优先级队列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "算法2.6 基于堆的优先级队列.swift"; sourceTree = "<group>"; };
 		382008522497C32E004B74E6 /* 面试题24-反转链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题24-反转链表.swift"; sourceTree = "<group>"; };
@@ -175,6 +181,8 @@
 		3845367D2479790500F0BAD2 /* LeetCode.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = LeetCode.playground; path = ../LeetCode.playground; sourceTree = "<group>"; };
 		3845367E2479793600F0BAD2 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		38453681247A635300F0BAD2 /* 面试题3 重复数组问题.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题3 重复数组问题.swift"; sourceTree = "<group>"; };
+		385EC45A264603B500AE1B76 /* 8.9 括号.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "8.9 括号.swift"; sourceTree = "<group>"; };
+		385EC45C26460CD400AE1B76 /* 8.10 颜色填充.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "8.10 颜色填充.swift"; sourceTree = "<group>"; };
 		38612BEA24EC29C800EF3B3E /* 2.6 回文链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.6 回文链表.swift"; sourceTree = "<group>"; };
 		38612BEC24F15CEB00EF3B3E /* 2.7 链表相交.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.7 链表相交.swift"; sourceTree = "<group>"; };
 		38612BEE24F24A6600EF3B3E /* 2.8 环路检查.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.8 环路检查.swift"; sourceTree = "<group>"; };
@@ -327,6 +335,10 @@
 				38A1D215262AA31100465C42 /* 8.6 汉诺塔问题.swift */,
 				38A1D218262AAE4700465C42 /* 8.7 无重复字符串的排列组合.swift */,
 				38A1D21B262AC54C00465C42 /* 8.8 重复字符串的排列组合 .swift */,
+				385EC45A264603B500AE1B76 /* 8.9 括号.swift */,
+				385EC45C26460CD400AE1B76 /* 8.10 颜色填充.swift */,
+				381944FA264FADF1000D4C03 /* 8.11 硬币.swift */,
+				381944FC264FBF72000D4C03 /* 8.12 八皇后.swift */,
 			);
 			path = "第八章 递归与动态规划";
 			sourceTree = "<group>";
@@ -570,6 +582,7 @@
 				383C8E5225F4787000BC22BC /* 8.2 迷路的机器人.swift in Sources */,
 				3884D21424A6395700A812F7 /* 面试题42-连续子数组的最大和.swift in Sources */,
 				38832EC224D701DF00B48BAC /* 1.4 回文排列.swift in Sources */,
+				381944FB264FADF1000D4C03 /* 8.11 硬币.swift in Sources */,
 				3884D22C24B0588100A812F7 /* 面试题54-二叉搜索树的第k大节点.swift in Sources */,
 				3864BC5125E68BA100E1A336 /* 6.2 篮球问题.swift in Sources */,
 				38832EB924D30ABE00B48BAC /* 1.1 判定字符是否唯一.swift in Sources */,
@@ -609,6 +622,7 @@
 				3884D24324B8BB2D00A812F7 /* 面试题63-股票的最大利润.swift in Sources */,
 				3884D20F24A5A2B200A812F7 /* 面试题40-最小的k个数.swift in Sources */,
 				3884D22A24B02BE600A812F7 /* 面试题53-在排序数组中查找数字.swift in Sources */,
+				381944FD264FBF72000D4C03 /* 8.12 八皇后.swift in Sources */,
 				380ABDB0248FD3A2004DE3D2 /* CPlus.mm in Sources */,
 				380ABDBE2497B130004DE3D2 /* 面试题23-链表中环的入口节点.swift in Sources */,
 				383C8E4E25F05E0100BC22BC /* 8.1 三步问题.swift in Sources */,
@@ -646,6 +660,7 @@
 				38A1D21326218FF900465C42 /* 8.5 递归乘法.swift in Sources */,
 				380ABDB2248FDB6B004DE3D2 /* 面试题17-打印从1到最大的n位数.swift in Sources */,
 				3864BC6625E7E82700E1A336 /* 6.9 100个存储柜.swift in Sources */,
+				385EC45B264603B500AE1B76 /* 8.9 括号.swift in Sources */,
 				3884D21824A72EFE00A812F7 /* 面试题44-数字序列中某一位的数字.swift in Sources */,
 				38BAF28625E53BCB00C8A48C /* 6.1 较重的药丸.swift in Sources */,
 				38A1D219262AAE4700465C42 /* 8.7 无重复字符串的排列组合.swift in Sources */,
@@ -666,6 +681,7 @@
 				383FAF55249FA68F0028DA22 /* 面试题35-复杂链表的复制.swift in Sources */,
 				38612BEF24F24A6600EF3B3E /* 2.8 环路检查.swift in Sources */,
 				3884D24924BA07D200A812F7 /* 面试题66-构建乘积数组.swift in Sources */,
+				385EC45D26460CD400AE1B76 /* 8.10 颜色填充.swift in Sources */,
 				38832ECA24DE937000B48BAC /* 1.8 零矩阵.swift in Sources */,
 				383FAF53249F9B410028DA22 /* 面试题34-二叉树中和为某一值的路径.swift in Sources */,
 			);
