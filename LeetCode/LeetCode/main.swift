@@ -260,4 +260,6 @@ struct Fast {
 //Interview_8_9.test()
 //Interview_8_10.test()
 //Interview_8_11.test()
-Interview_8_12.test()
+//Interview_8_12.test()
+//Interview_8_13.test()
+Interview_8_14.test()
