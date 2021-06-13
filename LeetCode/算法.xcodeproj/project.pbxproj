@@ -140,6 +140,23 @@
 		38BAF27D25E2322F00C8A48C /* 6 素性检查.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BAF27C25E2322F00C8A48C /* 6 素性检查.swift */; };
 		38BAF28225E2358200C8A48C /* 6 生成素数序列.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BAF28125E2358200C8A48C /* 6 生成素数序列.swift */; };
 		38BAF28625E53BCB00C8A48C /* 6.1 较重的药丸.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BAF28525E53BCB00C8A48C /* 6.1 较重的药丸.swift */; };
+		38C751B3266EE679005BFBF8 /* 16.10 生存人数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751B2266EE679005BFBF8 /* 16.10 生存人数.swift */; };
+		38C751B526702903005BFBF8 /* 16.11 跳水板.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751B426702903005BFBF8 /* 16.11 跳水板.swift */; };
+		38C751B7267031D7005BFBF8 /* 16.12 XML编码.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751B6267031D7005BFBF8 /* 16.12 XML编码.swift */; };
+		38C751B92670356E005BFBF8 /* 16.13 平分正方形.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751B82670356E005BFBF8 /* 16.13 平分正方形.swift */; };
+		38C751BB26703B22005BFBF8 /* 16.14 最佳直线.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751BA26703B22005BFBF8 /* 16.14 最佳直线.swift */; };
+		38C751BD26717B60005BFBF8 /* 16.15 珠玑妙算.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751BC26717B60005BFBF8 /* 16.15 珠玑妙算.swift */; };
+		38C751BF26718079005BFBF8 /* 16.16 部分排序.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751BE26718079005BFBF8 /* 16.16 部分排序.swift */; };
+		38C751C12674446E005BFBF8 /* 16.17 连续数列.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751C02674446E005BFBF8 /* 16.17 连续数列.swift */; };
+		38C751C32674485D005BFBF8 /* 16.18 匹配模式.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751C22674485D005BFBF8 /* 16.18 匹配模式.swift */; };
+		38C751C5267470AA005BFBF8 /* 16.19 水域大小.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751C4267470AA005BFBF8 /* 16.19 水域大小.swift */; };
+		38C751C726748228005BFBF8 /* 16.20 T9键盘.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751C626748228005BFBF8 /* 16.20 T9键盘.swift */; };
+		38C751C926749189005BFBF8 /* 16.21 交换和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751C826749188005BFBF8 /* 16.21 交换和.swift */; };
+		38C751CB26749B3A005BFBF8 /* 16.22 兰顿蚂蚁.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751CA26749B3A005BFBF8 /* 16.22 兰顿蚂蚁.swift */; };
+		38C751CD2675AC5A005BFBF8 /* 16.23 Rand5与Rand7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751CC2675AC5A005BFBF8 /* 16.23 Rand5与Rand7.swift */; };
+		38C751CF2675B506005BFBF8 /* 16.24 对数和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751CE2675B506005BFBF8 /* 16.24 对数和.swift */; };
+		38C751D12675C93D005BFBF8 /* 16.25 LRU缓存.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751D02675C93D005BFBF8 /* 16.25 LRU缓存.swift */; };
+		38C751D32675DD4B005BFBF8 /* 16.26 计算器.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C751D22675DD4B005BFBF8 /* 16.26 计算器.swift */; };
 		38FA0C1C247C1C5D006B8C49 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C1B247C1C5D006B8C49 /* Exercise.swift */; };
 		38FA0C1E247CA2B3006B8C49 /* 面试题4二维数组查找.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C1D247CA2B3006B8C49 /* 面试题4二维数组查找.swift */; };
 		38FA0C22247EBDB3006B8C49 /* StringOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C21247EBDB3006B8C49 /* StringOperation.m */; };
@@ -301,6 +318,23 @@
 		38BAF27C25E2322F00C8A48C /* 6 素性检查.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6 素性检查.swift"; sourceTree = "<group>"; };
 		38BAF28125E2358200C8A48C /* 6 生成素数序列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6 生成素数序列.swift"; sourceTree = "<group>"; };
 		38BAF28525E53BCB00C8A48C /* 6.1 较重的药丸.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6.1 较重的药丸.swift"; sourceTree = "<group>"; };
+		38C751B2266EE679005BFBF8 /* 16.10 生存人数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.10 生存人数.swift"; sourceTree = "<group>"; };
+		38C751B426702903005BFBF8 /* 16.11 跳水板.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.11 跳水板.swift"; sourceTree = "<group>"; };
+		38C751B6267031D7005BFBF8 /* 16.12 XML编码.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.12 XML编码.swift"; sourceTree = "<group>"; };
+		38C751B82670356E005BFBF8 /* 16.13 平分正方形.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.13 平分正方形.swift"; sourceTree = "<group>"; };
+		38C751BA26703B22005BFBF8 /* 16.14 最佳直线.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.14 最佳直线.swift"; sourceTree = "<group>"; };
+		38C751BC26717B60005BFBF8 /* 16.15 珠玑妙算.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.15 珠玑妙算.swift"; sourceTree = "<group>"; };
+		38C751BE26718079005BFBF8 /* 16.16 部分排序.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.16 部分排序.swift"; sourceTree = "<group>"; };
+		38C751C02674446E005BFBF8 /* 16.17 连续数列.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.17 连续数列.swift"; sourceTree = "<group>"; };
+		38C751C22674485D005BFBF8 /* 16.18 匹配模式.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.18 匹配模式.swift"; sourceTree = "<group>"; };
+		38C751C4267470AA005BFBF8 /* 16.19 水域大小.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.19 水域大小.swift"; sourceTree = "<group>"; };
+		38C751C626748228005BFBF8 /* 16.20 T9键盘.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.20 T9键盘.swift"; sourceTree = "<group>"; };
+		38C751C826749188005BFBF8 /* 16.21 交换和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.21 交换和.swift"; sourceTree = "<group>"; };
+		38C751CA26749B3A005BFBF8 /* 16.22 兰顿蚂蚁.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.22 兰顿蚂蚁.swift"; sourceTree = "<group>"; };
+		38C751CC2675AC5A005BFBF8 /* 16.23 Rand5与Rand7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.23 Rand5与Rand7.swift"; sourceTree = "<group>"; };
+		38C751CE2675B506005BFBF8 /* 16.24 对数和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.24 对数和.swift"; sourceTree = "<group>"; };
+		38C751D02675C93D005BFBF8 /* 16.25 LRU缓存.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.25 LRU缓存.swift"; sourceTree = "<group>"; };
+		38C751D22675DD4B005BFBF8 /* 16.26 计算器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16.26 计算器.swift"; sourceTree = "<group>"; };
 		38FA0C1B247C1C5D006B8C49 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		38FA0C1D247CA2B3006B8C49 /* 面试题4二维数组查找.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题4二维数组查找.swift"; sourceTree = "<group>"; };
 		38FA0C1F247EBDB3006B8C49 /* LeetCode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeetCode-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -413,6 +447,23 @@
 				3891F9A8266C743700E2A8EE /* 16.7 最大数值.swift */,
 				3891F9AA266D8A4B00E2A8EE /* 16.8 整数的英语表示.swift */,
 				3891F9AC266D8D5F00E2A8EE /* 16.9 运算.swift */,
+				38C751B2266EE679005BFBF8 /* 16.10 生存人数.swift */,
+				38C751B426702903005BFBF8 /* 16.11 跳水板.swift */,
+				38C751B6267031D7005BFBF8 /* 16.12 XML编码.swift */,
+				38C751B82670356E005BFBF8 /* 16.13 平分正方形.swift */,
+				38C751BA26703B22005BFBF8 /* 16.14 最佳直线.swift */,
+				38C751BC26717B60005BFBF8 /* 16.15 珠玑妙算.swift */,
+				38C751BE26718079005BFBF8 /* 16.16 部分排序.swift */,
+				38C751C02674446E005BFBF8 /* 16.17 连续数列.swift */,
+				38C751C22674485D005BFBF8 /* 16.18 匹配模式.swift */,
+				38C751C4267470AA005BFBF8 /* 16.19 水域大小.swift */,
+				38C751C626748228005BFBF8 /* 16.20 T9键盘.swift */,
+				38C751C826749188005BFBF8 /* 16.21 交换和.swift */,
+				38C751CA26749B3A005BFBF8 /* 16.22 兰顿蚂蚁.swift */,
+				38C751CC2675AC5A005BFBF8 /* 16.23 Rand5与Rand7.swift */,
+				38C751CE2675B506005BFBF8 /* 16.24 对数和.swift */,
+				38C751D02675C93D005BFBF8 /* 16.25 LRU缓存.swift */,
+				38C751D22675DD4B005BFBF8 /* 16.26 计算器.swift */,
 			);
 			path = "第16章 中等难题";
 			sourceTree = "<group>";
@@ -707,6 +758,7 @@
 				381944FB264FADF1000D4C03 /* 8.11 硬币.swift in Sources */,
 				3884D22C24B0588100A812F7 /* 面试题54-二叉搜索树的第k大节点.swift in Sources */,
 				3864BC5125E68BA100E1A336 /* 6.2 篮球问题.swift in Sources */,
+				38C751C32674485D005BFBF8 /* 16.18 匹配模式.swift in Sources */,
 				3825C392266343E900E55D32 /* 10.9 排序矩阵查找.swift in Sources */,
 				38832EB924D30ABE00B48BAC /* 1.1 判定字符是否唯一.swift in Sources */,
 				38612BED24F15CEB00EF3B3E /* 2.7 链表相交.swift in Sources */,
@@ -715,6 +767,7 @@
 				38832ECC24DEF22900B48BAC /* 1.9 字符串轮转.swift in Sources */,
 				3884D24D24BAAE7D00A812F7 /* (面试题68)树中两个节点的最低公共祖先.swift in Sources */,
 				38453677247978F000F0BAD2 /* main.swift in Sources */,
+				38C751BB26703B22005BFBF8 /* 16.14 最佳直线.swift in Sources */,
 				38FA0C1C247C1C5D006B8C49 /* Exercise.swift in Sources */,
 				3825C3862662157B00E55D32 /* 10.3 搜索旋转数组.swift in Sources */,
 				3825C38E26632D6A00E55D32 /* 10.7 失踪的整数.swift in Sources */,
@@ -728,6 +781,7 @@
 				383FAF45249D01DD0028DA22 /* 面试题30-包含min函数的栈.swift in Sources */,
 				38BAF27D25E2322F00C8A48C /* 6 素性检查.swift in Sources */,
 				3884D22E24B0CFE300A812F7 /* 面试题55-二叉树的深度.swift in Sources */,
+				38C751B3266EE679005BFBF8 /* 16.10 生存人数.swift in Sources */,
 				3828EBA826699434002AEC5B /* 15.1 进程与线程.swift in Sources */,
 				389208D8266850F500AA5DB6 /* 11.1 改错.swift in Sources */,
 				383FAF5724A240150028DA22 /* 面试题36-二叉搜索树与双向链表.swift in Sources */,
@@ -739,11 +793,14 @@
 				3828EBAF26699DCF002AEC5B /* 16.3 交点.swift in Sources */,
 				383314A0260588310088D57B /* 8.4 幂集.swift in Sources */,
 				3825C38C266325FA00E55D32 /* 10.6 大文件的排序.swift in Sources */,
+				38C751D32675DD4B005BFBF8 /* 16.26 计算器.swift in Sources */,
 				387109E0266B5F2800C6FF0D /* 16.4 井字游戏.swift in Sources */,
+				38C751C12674446E005BFBF8 /* 16.17 连续数列.swift in Sources */,
 				3884D23024B17D8900A812F7 /* 面试题56-数组中数字出现的次数.swift in Sources */,
 				38FA0C26248091C4006B8C49 /* 🌲的遍历.swift in Sources */,
 				380ABDB424927084004DE3D2 /* 面试题18-删除链表的节点.swift in Sources */,
 				3884D23F24B69CD700A812F7 /* 面试题61-扑克牌中的顺子.swift in Sources */,
+				38C751B526702903005BFBF8 /* 16.11 跳水板.swift in Sources */,
 				389208D52668401800AA5DB6 /* 10.11 峰与谷.swift in Sources */,
 				381EAA5B24BF529A004415CA /* Prim.swift in Sources */,
 				3864BC6325E7E7F800E1A336 /* 6.8 扔鸡蛋问题.swift in Sources */,
@@ -753,6 +810,7 @@
 				380ABDA6248CED34004DE3D2 /* 面试题14-剪绳子.swift in Sources */,
 				383FAF43249A6F0E0028DA22 /* 面试题29-顺时针打印矩阵.swift in Sources */,
 				3884D24124B761E300A812F7 /* 面试题62-圆圈中最后剩下的数字.swift in Sources */,
+				38C751BF26718079005BFBF8 /* 16.16 部分排序.swift in Sources */,
 				387109E2266B701100C6FF0D /* 16.5 阶乘尾数.swift in Sources */,
 				3825C38A26626AB200E55D32 /* 10.5 稀疏数组搜索.swift in Sources */,
 				3884D24324B8BB2D00A812F7 /* 面试题63-股票的最大利润.swift in Sources */,
@@ -763,16 +821,21 @@
 				381944FD264FBF72000D4C03 /* 8.12 八皇后.swift in Sources */,
 				380ABDB0248FD3A2004DE3D2 /* CPlus.mm in Sources */,
 				380ABDBE2497B130004DE3D2 /* 面试题23-链表中环的入口节点.swift in Sources */,
+				38C751C726748228005BFBF8 /* 16.20 T9键盘.swift in Sources */,
 				383C8E4E25F05E0100BC22BC /* 8.1 三步问题.swift in Sources */,
 				383FAF4F249F34B20028DA22 /* 面试题32-从上到下打印二叉树.swift in Sources */,
 				389208DD266854D300AA5DB6 /* 13.4 泛型和模板方法.swift in Sources */,
+				38C751CF2675B506005BFBF8 /* 16.24 对数和.swift in Sources */,
+				38C751BD26717B60005BFBF8 /* 16.15 珠玑妙算.swift in Sources */,
 				38832EBE24D55E4700B48BAC /* 1.2 判断是否互为字符串重排.swift in Sources */,
 				3864BC5725E7E14300E1A336 /* 6.4 三角形上的蚂蚁.swift in Sources */,
 				380ABDB62493CAE9004DE3D2 /* 面试题19-正则表达式匹配.swift in Sources */,
 				3884D22424AC14CC00A812F7 /* 面试题50-第一个只出现一次的字符.swift in Sources */,
 				38832EC624D999F600B48BAC /* 1.6 字符串压缩.swift in Sources */,
+				38C751B92670356E005BFBF8 /* 16.13 平分正方形.swift in Sources */,
 				38832EBC24D5158400B48BAC /* BitMap.swift in Sources */,
 				3864BC6925E7E83D00E1A336 /* 6.10 有毒的苏打水.swift in Sources */,
+				38C751C5267470AA005BFBF8 /* 16.19 水域大小.swift in Sources */,
 				38FA0C2424801227006B8C49 /* 面试题6 从头到尾打印链表.swift in Sources */,
 				3828EBAD26699AED002AEC5B /* 16.2 单词频率.swift in Sources */,
 				3884D24524B8C05400A812F7 /* 面试题64-求1+2+……+.swift in Sources */,
@@ -784,16 +847,19 @@
 				3819450126547429000D4C03 /* 8.14 布尔运算.swift in Sources */,
 				38417DA724990EB400F0E6C4 /* 面试题26 树的子结构.swift in Sources */,
 				38832EC824D9A15200B48BAC /* 1.7 旋转矩阵.swift in Sources */,
+				38C751C926749189005BFBF8 /* 16.21 交换和.swift in Sources */,
 				3884D21A24A791DE00A812F7 /* 面试题45-把数组排成最小的数.swift in Sources */,
 				380ABDBC24965C69004DE3D2 /* 面试题22-链表中倒数第k个节点.swift in Sources */,
 				383FAF47249D0D530028DA22 /* 面试题31-栈的压入和弹出序列.swift in Sources */,
 				3884D24724B8C71600A812F7 /* 面试题65-不用加减乘除做加法.swift in Sources */,
 				3884D21624A63E0A00A812F7 /* 面试题43-1~n整数中1出现的次数.swift in Sources */,
 				380ABDBA2495E74F004DE3D2 /* 面试题21-调整数组顺序使奇数位于偶数前面.swift in Sources */,
+				38C751D12675C93D005BFBF8 /* 16.25 LRU缓存.swift in Sources */,
 				381944FF264FD162000D4C03 /* 8.13堆箱子.swift in Sources */,
 				3884D24B24BA0F1200A812F7 /* 面试题 67 写一个string转Int的方法.swift in Sources */,
 				3825C3902663373200E55D32 /* 10.8 寻找重复数.swift in Sources */,
 				3884D23224B21DF100A812F7 /* 面试题57-和为s的数字.swift in Sources */,
+				38C751B7267031D7005BFBF8 /* 16.12 XML编码.swift in Sources */,
 				383FAF5924A25A540028DA22 /* 面试题37-序列化二又树.swift in Sources */,
 				3884D21C24A8F08800A812F7 /* 面试题46-把数字翻译成字符串.swift in Sources */,
 				3884D23B24B4B3E600A812F7 /* 面试题59-队列的最大值.swift in Sources */,
@@ -821,6 +887,8 @@
 				3864BC5D25E7E66600E1A336 /* 6.6 蓝眸岛.swift in Sources */,
 				3845367F2479793600F0BAD2 /* Sort.swift in Sources */,
 				38FA0C2C2486AC05006B8C49 /* 面试题9-用两个栈实现队列.swift in Sources */,
+				38C751CD2675AC5A005BFBF8 /* 16.23 Rand5与Rand7.swift in Sources */,
+				38C751CB26749B3A005BFBF8 /* 16.22 兰顿蚂蚁.swift in Sources */,
 				38453682247A635300F0BAD2 /* 面试题3 重复数组问题.swift in Sources */,
 				380ABDAA248D3576004DE3D2 /* 面试题16-数值的整数次方.swift in Sources */,
 				383C8E5525F4C0EE00BC22BC /* 8.3 魔术索引.swift in Sources */,
