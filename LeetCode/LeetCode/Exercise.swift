@@ -473,7 +473,7 @@ extension Exercise {
                 }
                 
                 var result: [Int] = []
-                var queue = Queue<Tree>()
+                var queue = MyQueue<Tree>()
                 queue.enqueue(element: tree)
                 while !queue.isEmpty {
                     if let tree = queue.dequeue() {

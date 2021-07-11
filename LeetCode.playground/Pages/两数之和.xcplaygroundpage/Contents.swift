@@ -36,4 +36,11 @@ let target = 13
 let result = twoSum(numbers: numbers, target: target)
 
 let value = "0123456"
-print(value[value.startIndex...value.index(value.startIndex, offsetBy: 1)])
+//print(value[value.startIndex...value.index(value.startIndex, offsetBy: 1)])
+let index1 = value.index(after: value.startIndex)
+//let index2 = value.index(after: value.startIndex)
+//let dic = [index1: "1"]
+//print(dic[index2])
+print(value[value.startIndex...index1])
+
+//floor(1.3)

@@ -34,13 +34,13 @@ struct Topic9 {
         }
     }
     
-    struct Stack_Q<T> {
-        var leftQueue: Queue<T>
-        var rightQueue: Queue<T>
+    struct Stack_Q<T: Comparable> {
+        var leftQueue: MyQueue<T>
+        var rightQueue: MyQueue<T>
         
         init() {
-            leftQueue = Queue<T>()
-            rightQueue = Queue<T>()
+            leftQueue = MyQueue<T>()
+            rightQueue = MyQueue<T>()
         }
         
         mutating func pop() -> T? {

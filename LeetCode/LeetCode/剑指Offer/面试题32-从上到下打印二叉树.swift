@@ -18,7 +18,7 @@ import Foundation
  */
 struct Topic32 {
     static func levelTraveral(tree: Tree) -> [Int] {
-        var queue = Queue<Tree>()
+        var queue = MyQueue<Tree>()
         queue.enqueue(element: tree)
         var result: [Int] = []
         while !queue.isEmpty {
@@ -40,7 +40,7 @@ struct Topic32 {
      从上到下按层打印二又树,同一层的节点按从左到右的顺序打印,每层打印到一行。例如,打印图4.7中二叉树的结果为:
      */
     static func levelTraveralNexLine(tree: Tree) -> [[Int]] {
-        var queue = Queue<Tree>()
+        var queue = MyQueue<Tree>()
         queue.enqueue(element: tree)
         var result: [[Int]] = []
         var nextLevelCount = 0
@@ -78,7 +78,7 @@ struct Topic32 {
      请实现一个函数按照之字形顺序打印二叉树,即第一行按照从左到右的顺序打印,第二层按照从右到左的顺序打印,第三行再按照从左到右的顺序打印,其他行以此类推。例如,按之字形顺序打印图4.8中二叉树的结果为:
      */
     static func levelTraveralZline(tree: Tree) -> [[Int]] {
-        var queue = Queue<Tree>()
+        var queue = MyQueue<Tree>()
         queue.enqueue(element: tree)
         var result: [[Int]] = []
         var nextLevelCount = 0

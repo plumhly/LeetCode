@@ -23,6 +23,12 @@ class Tree: NSObject {
     }
 }
 
+extension Tree: Comparable {
+    static func < (lhs: Tree, rhs: Tree) -> Bool {
+        return true
+    }
+}
+
 func traversalTree() -> Tree {
     let root = Tree(value: 10)
     let left = Tree(value: 6, left: Tree(value: 4), right: Tree(value: 8))
@@ -97,11 +103,15 @@ struct Stack<Element> {
     }
 }
 
-struct Queue<Element> {
+struct MyQueue<Element: Comparable> {
     
-    private var array: [Element]
+    private(set) var array: [Element]
     var isEmpty: Bool {
         return array.isEmpty
+    }
+    
+    var peek: Element? {
+        return array.first
     }
     
     var size: Int {
@@ -117,6 +127,10 @@ struct Queue<Element> {
     
     mutating func enqueue(element: Element) {
        return array.append(element)
+    }
+    
+    mutating func remove(element: Element) {
+        array.removeAll { $0 == element}
     }
 }
 
@@ -277,7 +291,7 @@ extension Tree {
 extension Tree {
     func level() -> [Int] {
         
-        var queue = Queue<Tree>()
+        var queue = MyQueue<Tree>()
         var result: [Int] = []
         queue.enqueue(element: self)
         while !queue.isEmpty {
