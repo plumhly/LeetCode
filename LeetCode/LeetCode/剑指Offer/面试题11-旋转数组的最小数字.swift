@@ -25,7 +25,7 @@ struct Topic11 {
         }
         
         // first 只能在左边数组游荡
-        // last 只能在左边数组游荡
+        // last 只能在右边数组游荡
         var firstIndex = 0
         var lastIndex = numbers.count - 1
         var midIndex = firstIndex //考虑到有序数组

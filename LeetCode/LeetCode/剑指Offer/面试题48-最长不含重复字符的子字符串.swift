@@ -35,17 +35,20 @@ struct Topic48 {
         var currentLength = 0
         var maxLength = 0
         
+        let aAscii = Character("a").asciiValue!
         for (index, i) in str.indices.enumerated() {
-            let idx = Int(str[i].asciiValue! - Character("a").asciiValue!)
-            let value = array[idx]
-            if value < 0 || index - value > currentLength {
+            let idx = Int(str[i].asciiValue! - aAscii)
+            let prePosition = array[idx]
+            if prePosition < 0 || index - prePosition > currentLength {
                 currentLength += 1
             } else {
+                /// 如果 d < f(i-1),那么更新长度信息
                 if currentLength > maxLength {
                     maxLength = currentLength
                 }
-                currentLength = index - value
+                currentLength = index - prePosition
             }
+            /// 更新位置信息
             array[idx] = index
         }
         

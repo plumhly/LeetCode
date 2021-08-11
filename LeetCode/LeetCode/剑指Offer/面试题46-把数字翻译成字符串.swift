@@ -23,9 +23,9 @@ struct Topic46 {
     
     static func translate(str: String) -> Int {
         var result = Array<Int>(repeating: 0, count: str.count)
-        var count = 0
+        let zeroAsciiValue = Character("0").asciiValue!
         for i in str.indices.reversed() {
-            count = 0
+            var count = 0
             let index = str.distance(from: str.startIndex, to: i)
             if i < str.index(before: str.endIndex) {
                 count = result[index + 1]
@@ -34,12 +34,13 @@ struct Topic46 {
             }
             
             if i < str.index(before: str.endIndex) {
-                let min = str[str.index(after: i)].asciiValue! - Character("0").asciiValue!
-                let max = str[i].asciiValue! - Character("0").asciiValue!
+                let min = str[str.index(after: i)].asciiValue! - zeroAsciiValue
+                let max = str[i].asciiValue! - zeroAsciiValue
                 let combination = max * 10 + min
                 
                 if combination >= 10, combination <= 25 {
                     if i < str.index(str.endIndex, offsetBy: -2) {
+                        /// ⚠️这里之所以要找index + 2，是因为当前两位数可以被翻译，那么存在开始是两位数的翻译方式，需要加上index+2的结果
                         count += result[index + 2]
                     } else {
                         // 1是最后一个字符的组合情况

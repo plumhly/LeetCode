@@ -1392,3 +1392,385 @@ extension Exercise {
         }
     }
 }
+
+
+extension Exercise {
+    struct E21_7_31 {
+        class Tree: NSObject {
+            let value: Int
+            var left: Tree?
+            var right: Tree?
+            
+            init(value: Int, left: Tree? = nil, right: Tree? = nil) {
+                self.value = value
+                self.left = left
+                self.right = right
+            }
+            
+        }
+        
+        struct TreeOrder {
+            // 树的后续遍历
+            
+            /// 左右中
+            static func postOrder(on tree: Tree) -> [Int] {
+                var stack = Stack<Tree>()
+                var this: Tree? = tree
+                
+                var pre: Tree? = nil
+                var result: [Int] = []
+                
+                while this != nil || !stack.isEmpty {
+                    if let t = this {
+                        stack.push(value: t)
+                        this = this?.left
+                    } else {
+                        this = stack.peek()
+                        // 若有右子树，并且之前访问的树，不是右子树，那么就访问该树
+                        // 否则, 表明右子树已经访问，应该访问根节点，然后弹出栈
+                        if let r = this?.right, r != pre {
+                            this = r
+                        } else {
+                            /// 记录当前树
+                            pre = this
+                            
+                            /// 弹出当前树
+                            _ = stack.pop()
+                            
+                            if let t = this {
+                                result.append(t.value)
+                            }
+                            this = nil
+                        }
+                    }
+                }
+                
+                return result
+            }
+            
+            static func test() {
+                let tree = Tree(value: 4, left: Tree(value: 3, left: Tree(value: 2), right: Tree(value: 1)), right: Tree(value: 5, left: Tree(value: 6), right: Tree(value: 7)))
+                
+                assert(postOrder(on: tree) == [2, 1, 3, 6, 7, 5, 4])
+                print("\(self) over")
+            }
+        }
+        
+        
+        /// 前序和中序 => 构建树
+        struct ConstructTree {
+            
+            static func createTree(with preOrder: [Int], inOrder: [Int]) -> Tree? {
+                return _createTree(with: preOrder, preStart: 0, preEnd: preOrder.count - 1, inOrder: inOrder, inStart: 0, inEnd: inOrder.count - 1)
+            }
+            
+            static func _createTree(with preOrder: [Int], preStart: Int, preEnd: Int, inOrder: [Int], inStart: Int, inEnd: Int) -> Tree? {
+                
+                guard preStart < preEnd else {
+                    return Tree(value: preOrder[preStart])
+                }
+                
+                let rootValue = preOrder[preStart]
+                let root = Tree(value: rootValue)
+                
+                var start = inStart
+                
+                while start <= inEnd, inOrder[start] != rootValue {
+                    start += 1
+                }
+                
+                
+                let leftChildSize = start - inStart
+                
+                let leftPreStart = preStart + 1
+                let leftPreEnd = preStart + leftChildSize
+                let leftInStart = inStart
+                let leftInEnd = inStart + leftChildSize - 1
+                
+                if leftChildSize > 0 {
+                    root.left = _createTree(with: preOrder, preStart: leftPreStart, preEnd: leftPreEnd, inOrder: inOrder, inStart: leftInStart, inEnd: leftInEnd)
+                }
+                
+                
+                if leftChildSize < preEnd - preStart {
+                    let rPreStart = leftPreEnd + 1
+                    let rPreEnd = preEnd
+                    let rInStart = leftInEnd + 2
+                    let rInEnd = inEnd
+                    
+                    
+                    root.right = _createTree(with: preOrder, preStart: rPreStart, preEnd: rPreEnd, inOrder: inOrder, inStart: rInStart, inEnd: rInEnd)
+                }
+                
+                return root
+            }
+        }
+        
+        static func test() {
+            TreeOrder.test()
+        }
+    }
+}
+
+extension Exercise {
+
+    struct E21_8_7 {
+        class Tree: NSObject {
+            let value: Int
+            var left: Tree?
+            var right: Tree?
+            
+            init(value: Int, left: Tree? = nil, right: Tree? = nil) {
+                self.value = value
+                self.left = left
+                self.right = right
+            }
+            
+        }
+        
+        struct Interview_36 {
+            static func createList(from tree: Tree?) -> Tree? {
+                return _createList(from: tree)?.head
+            }
+            
+            static func _createList(from tree: Tree?) -> (head: Tree?, tail: Tree?)? {
+                guard let root = tree else {
+                    return nil
+                }
+                
+                var head: Tree? = root
+                var tail: Tree? = root
+                
+                if let leftListInfo = _createList(from: root.left) {
+                    head = leftListInfo.head ?? root
+                    root.left = leftListInfo.tail
+                    leftListInfo.tail?.right = root
+                }
+                
+                if let rightListInfo = _createList(from: root.right) {
+                    tail = rightListInfo.tail ?? root
+                    root.right = rightListInfo.head
+                    rightListInfo.head?.left = root
+                }
+                
+                return (head, tail)
+            }
+            
+            static func test() {
+                let tree = Tree(value: 10, left: Tree(value: 6, left: Tree(value: 4), right: Tree(value: 8)), right: Tree(value: 14, left: Tree(value: 12), right: Tree(value: 16)))
+                let tree2 = Tree(value: 6, right: Tree(value: 7, right: Tree(value: 8)))
+                let tree3 = Tree(value: 6, left: Tree(value: 5, left: Tree(value: 4)))
+                
+                let result = createList(from: tree)
+                let result2 = createList(from: tree2)
+                let result3 = createList(from: tree3)
+                print("OVer")
+            }
+        }
+        
+        struct I38 {
+            static func permutation(string: String?) {
+                guard let s = string else {
+                    return
+                }
+                
+                var result = Array(s)
+                _permitation(index: 0, result: &result)
+            }
+            
+            static func _permitation(index: Int, result: inout [Character]) {
+                
+                guard index < result.count - 1 else {
+                    print(String(result))
+                    return
+                }
+            
+                /// ⚠️ 自己和自己交换，才能保证打印后边变动的组合
+                for idx in index ..< result.count {
+                    /// ⚠️1.交换
+                    result.swapAt(index, idx)
+                    _permitation(index: index + 1, result: &result)
+                    
+                    // 还原
+                    result.swapAt(index, idx)
+                }
+            }
+            
+            
+            static func composite(string: String?) {
+                guard let s = string else {
+                    return
+                }
+                
+                for length in 1...s.count {
+                    var result = ""
+                    _composite(s: s, length: length, index: s.startIndex, result: &result)
+                }
+            }
+            
+            static func _composite(s: String, length: Int, index: String.Index, result: inout String) {
+                guard length > 0 else {
+                    print(result)
+                    return
+                }
+                
+                guard index < s.endIndex else {
+                    return
+                }
+                
+                /// 加入
+                result.append(String(s[index]))
+                _composite(s: s, length: length - 1, index: s.index(after: index), result: &result)
+                
+                /// 不加入
+                /// 恢复
+                result.removeLast()
+                _composite(s: s, length: length, index: s.index(after: index), result: &result)
+            }
+            
+            static func queeen(size: Int) {
+                guard size > 0 else {
+                    return
+                }
+                
+                var result: [Int] = []
+                _queen(row: 0, size: size, result: &result)
+            }
+            
+            
+            static func _queen(row: Int, size: Int, result: inout [Int]) {
+                
+                func isValid(row: Int, column: Int, result: inout [Int]) -> Bool {
+                    guard !result.isEmpty else {
+                        return true
+                    }
+                    
+                    
+                    var isValid = true
+                    for (r, c) in result.enumerated() {
+                        
+                        /// 是否同一列
+                        /// 是否对角线
+                        if c == column || row - r == abs(column - c) {
+                            isValid = false
+                            break
+                        }
+                    }
+                    
+                    return isValid
+                }
+                
+                guard row < size else {
+                    print(result)
+                    return
+                }
+                
+                for column in 0 ..< size where isValid(row: row, column: column, result: &result) {
+                    result.append(column)
+                    _queen(row: row + 1, size: size, result: &result)
+                    result.removeLast()
+                }
+            }
+            
+            
+            static func test() {
+                permutation(string: "abc")
+                composite(string: "abc")
+                queeen(size: 8)
+            }
+        }
+        
+        static func test() {
+            Interview_36.test()
+            I38.test()
+        }
+    }
+}
+
+
+extension Exercise {
+    struct E21_8_8 {
+        struct I43 {
+            static func findOneNumberTo(number: Int) -> Int {
+                guard number > 0 else {
+                    return 0
+                }
+                
+                /// 获取最高位
+                let maxPositionValue = findMaxPositionValue(on: number)
+                let length = findLength(of: number)
+                
+                if length == 1 {
+                    return maxPositionValue > 0 ? 1 : 0
+                }
+                
+                /// 算最高位
+                var numberOfMaxPosition = 0
+                if maxPositionValue > 1 {
+                    numberOfMaxPosition = powOf10(length: length - 1)
+                } else {
+                    let nextNumber = number % powOf10(length: length - 1)
+                    numberOfMaxPosition = nextNumber + 1
+                }
+                
+                /// 剩下位出现1的情况，最高位数值 x 剩下位个数 x 除去设置1之后，其他位数
+                /// 举例：21345, 最高位2，剩下的位数是4， 如果一位设置1，那么其他三位可以随便变化。4 x 2 x 10^(3)
+                let numberOfRemainPosition = maxPositionValue * (length - 1) * powOf10(length: length - 2)
+                
+                /// 除去最高位，再计算
+                let nextNumber = findOneNumberTo(number: number % powOf10(length: length - 1))
+                
+                return numberOfMaxPosition + numberOfRemainPosition + nextNumber
+            }
+            
+            static func findMaxPositionValue(on number: Int) -> Int {
+                guard number > 0 else {
+                    return 0
+                }
+                
+                var number = number
+                while number > 9 {
+                    number /= 10
+                }
+                
+                return number
+            }
+            
+            static func findLength(of number: Int) -> Int {
+                
+                var length = 1
+                var number = number
+                while number > 9 {
+                    number /= 10
+                    length += 1
+                }
+                
+                return length
+            }
+            
+            static func powOf10(length: Int) -> Int {
+                var length = length
+                var value = 1
+                while length > 0 {
+                    value *= 10
+                    length -= 1
+                }
+                
+                return value
+            }
+            
+            static func test() {
+                assert(findOneNumberTo(number: 0) == 0)
+                assert(findOneNumberTo(number: 1) == 1)
+                assert(findOneNumberTo(number: 5) == 1)
+                assert(findOneNumberTo(number: 20) == 12)
+                print("Topic43 OVER")
+            }
+            
+        }
+        
+        static func test() {
+            I43.test()
+        }
+    }
+}

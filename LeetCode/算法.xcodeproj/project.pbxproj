@@ -187,7 +187,7 @@
 		38FA0C1C247C1C5D006B8C49 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C1B247C1C5D006B8C49 /* Exercise.swift */; };
 		38FA0C1E247CA2B3006B8C49 /* 面试题4二维数组查找.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C1D247CA2B3006B8C49 /* 面试题4二维数组查找.swift */; };
 		38FA0C22247EBDB3006B8C49 /* StringOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C21247EBDB3006B8C49 /* StringOperation.m */; };
-		38FA0C2424801227006B8C49 /* 面试题6 从头到尾打印链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C2324801227006B8C49 /* 面试题6 从头到尾打印链表.swift */; };
+		38FA0C2424801227006B8C49 /* 面试题6 从尾到头打印链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C2324801227006B8C49 /* 面试题6 从尾到头打印链表.swift */; };
 		38FA0C26248091C4006B8C49 /* 🌲的遍历.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C25248091C4006B8C49 /* 🌲的遍历.swift */; };
 		38FA0C282483A38E006B8C49 /* 面试题7重建二叉树.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C272483A38E006B8C49 /* 面试题7重建二叉树.swift */; };
 		38FA0C2A2483E4B8006B8C49 /* 面试8 二叉树的下一个节点.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FA0C292483E4B8006B8C49 /* 面试8 二叉树的下一个节点.swift */; };
@@ -394,7 +394,7 @@
 		38FA0C1F247EBDB3006B8C49 /* LeetCode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeetCode-Bridging-Header.h"; sourceTree = "<group>"; };
 		38FA0C20247EBDB3006B8C49 /* StringOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringOperation.h; sourceTree = "<group>"; };
 		38FA0C21247EBDB3006B8C49 /* StringOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringOperation.m; sourceTree = "<group>"; };
-		38FA0C2324801227006B8C49 /* 面试题6 从头到尾打印链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题6 从头到尾打印链表.swift"; sourceTree = "<group>"; };
+		38FA0C2324801227006B8C49 /* 面试题6 从尾到头打印链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题6 从尾到头打印链表.swift"; sourceTree = "<group>"; };
 		38FA0C25248091C4006B8C49 /* 🌲的遍历.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🌲的遍历.swift"; sourceTree = "<group>"; };
 		38FA0C272483A38E006B8C49 /* 面试题7重建二叉树.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试题7重建二叉树.swift"; sourceTree = "<group>"; };
 		38FA0C292483E4B8006B8C49 /* 面试8 二叉树的下一个节点.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "面试8 二叉树的下一个节点.swift"; sourceTree = "<group>"; };
@@ -589,7 +589,7 @@
 			children = (
 				38453681247A635300F0BAD2 /* 面试题3 重复数组问题.swift */,
 				38FA0C1D247CA2B3006B8C49 /* 面试题4二维数组查找.swift */,
-				38FA0C2324801227006B8C49 /* 面试题6 从头到尾打印链表.swift */,
+				38FA0C2324801227006B8C49 /* 面试题6 从尾到头打印链表.swift */,
 				38FA0C25248091C4006B8C49 /* 🌲的遍历.swift */,
 				38FA0C272483A38E006B8C49 /* 面试题7重建二叉树.swift */,
 				38FA0C292483E4B8006B8C49 /* 面试8 二叉树的下一个节点.swift */,
@@ -942,7 +942,7 @@
 				3864BC6925E7E83D00E1A336 /* 6.10 有毒的苏打水.swift in Sources */,
 				389ED57F2682AC2900C09F83 /* 17.13恢复空格.swift in Sources */,
 				38C751C5267470AA005BFBF8 /* 16.19 水域大小.swift in Sources */,
-				38FA0C2424801227006B8C49 /* 面试题6 从头到尾打印链表.swift in Sources */,
+				38FA0C2424801227006B8C49 /* 面试题6 从尾到头打印链表.swift in Sources */,
 				3828EBAD26699AED002AEC5B /* 16.2 单词频率.swift in Sources */,
 				3884D24524B8C05400A812F7 /* 面试题64-求1+2+……+.swift in Sources */,
 				38832ED024E037E800B48BAC /* 2.1 移除重复节点.swift in Sources */,

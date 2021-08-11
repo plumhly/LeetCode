@@ -32,7 +32,7 @@ struct Topic8 {
             }
             return tempTree?.value
         } else if tempTree?.parent != nil {
-            var current: Tree?
+            var current: Tree? = tree
             while let parent = tempTree?.parent, parent.left != current {
                 tempTree = parent
                 current = parent

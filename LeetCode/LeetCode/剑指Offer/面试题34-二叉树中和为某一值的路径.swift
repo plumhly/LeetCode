@@ -16,6 +16,7 @@ import Foundation
  题目:输入一棵二叉树和一个整数,打印出二叉树中节点值的和为输入整数的所有路径。从树的根节点开始往下一直到叶节点所经过的节点形成一条路径。二叉树节点的定义如下:
  
  */
+
 struct Topic34 {
     static func findPath(tree: Tree?, sum: Int) -> [[Int]]? {
         guard let tree = tree else { return nil}
@@ -34,6 +35,8 @@ struct Topic34 {
         current += root
         path.append(root)
         
+        /// ⚠️思维误区
+        /// 1.题目没有说所有节点是正整数，所有需要一直到叶子节点，不能中途返回
         let isLeaf = tree.left == nil && tree.right == nil
         if isLeaf, current == sum {
             // 记录节点
@@ -48,7 +51,7 @@ struct Topic34 {
             findPath(tree: right, sum: sum, current: current, path: &path, result: &result)
         }
         
-        // ***
+        // ⚠️
         // 无论成功或者失败都要回溯
         path.removeLast()
     }

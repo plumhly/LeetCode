@@ -21,6 +21,11 @@ import Foundation
 
 struct Topic22 {
     static func findLast(number: Int, node: Node?) -> Int? {
+        
+        /*
+         ⚠️
+         1 number > 0, 不然那-1是一个很大的数
+         */
         guard number > 0, node != nil else {
             return nil
         }
@@ -29,6 +34,7 @@ struct Topic22 {
         var secondHead: Node? = nil
         
         for _ in 0...number - 1 {
+            /// ⚠️ number > 链表节点数
             guard let next = firstHead?.next else {
                  return nil
             }

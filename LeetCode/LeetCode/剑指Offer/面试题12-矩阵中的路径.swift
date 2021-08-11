@@ -47,6 +47,7 @@ struct Topic12 {
         
         var visits = mattrix.map { $0.map { _ in false } }
         
+        /// 寻找起点
         for row in 0..<rows {
             for column in 0..<colums {
                 if hasPath(mattrix: mattrix, string: string, visted: &visits, row: row, column: column, index: &index) {
@@ -68,15 +69,20 @@ struct Topic12 {
         let rows = mattrix.count
         let colums = mattrix.first!.count
         var haspath = false
+        
+        /// ⚠️ row 和 column 的限制
         if row < rows && row >= 0 && column < colums && column >= 0 && mattrix[row][column] == String(string[index]) && !visted[row][column] {
             
+            /// ⚠️ 延长index
             index = string.index(after: index)
-            
+            /// ⚠️记录访问但
             visted[row][column] = true
             
             haspath = hasPath(mattrix: mattrix, string: string, visted: &visted, row: row + 1, column: column, index: &index) || hasPath(mattrix: mattrix, string: string, visted: &visted, row: row - 1, column: column, index: &index) || hasPath(mattrix: mattrix, string: string, visted: &visted, row: row, column: column + 1, index: &index) || hasPath(mattrix: mattrix, string: string, visted: &visted, row: row, column: column - 1, index: &index)
             
+            ///
             if !haspath {
+                /// ⚠️还原
                 index = string.index(before: index)
                 visted[row][column] = false
             }

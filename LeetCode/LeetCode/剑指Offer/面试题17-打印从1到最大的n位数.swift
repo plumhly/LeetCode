@@ -34,6 +34,8 @@ struct Topic17 {
             let zeroValue = ("0" as Character).asciiValue!
             for i in stride(from: number.count - 1, through: 0, by: -1) {
                 maxValue = number[i].asciiValue! - zeroValue  + carry
+                
+                /// ⚠️ 末尾加1
                 if i == number.count - 1 {
                     maxValue += 1
                 }
@@ -62,6 +64,7 @@ struct Topic17 {
     }
     
     // 全排列 空间复杂度 O(n): 数组 O(n)， 栈 O(n)
+    // 时间 ：10^n
     struct Round2 {
         static  let zeroValue = ("0" as Character).asciiValue!
         static func printMaxNumber(n: Int) {

@@ -38,9 +38,8 @@ struct Topic36 {
         }
         
         pCurrent.left = current
-        if current != nil {
-            current?.right = pCurrent
-        }
+        current?.right = pCurrent
+        
         current = pCurrent
         
         if let right = pCurrent.right {

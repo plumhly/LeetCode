@@ -33,6 +33,7 @@ struct Topic60 {
             let all = Int(pow(Double(maxPoint), Double(number)))
             
             for (index, value) in counts.enumerated() {
+                /// 存的时候是 sum - number = index
                 print("sum:\(index + number) percent: \(value)/\(all)")
             }
         }
@@ -45,7 +46,7 @@ struct Topic60 {
             for i in 1...maxPoint {
                 // **
                 let current = sum + i
-                sumOf(counts: &counts, number: number , index: index - 1, sum: current)
+                sumOf(counts: &counts, number: number, index: index - 1, sum: current)
             }
         }
         

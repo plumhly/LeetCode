@@ -25,7 +25,7 @@ struct Topic29 {
         let columns = array[0].count
         var start = 0
         var result: [Int] = []
-        // *
+        // ⚠️，规律：每圈的起始点满足 2 * start < row, 2 * start < column
         while row > 2 * start, columns > 2 * start  {
             let r = printCircle(array, start: start)
             result.append(contentsOf: r)

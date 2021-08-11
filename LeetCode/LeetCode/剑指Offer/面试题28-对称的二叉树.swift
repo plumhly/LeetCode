@@ -33,7 +33,13 @@ struct Topic28 {
             return true
         }
         
+        /// 结构不同
         if left == nil || right == nil {
+            return false
+        }
+        
+        /// 值不同
+        if left!.value != right!.value {
             return false
         }
         

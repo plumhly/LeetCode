@@ -45,6 +45,9 @@ struct Topic67 {
                 // 考虑溢出
                 let isValid: Bool
                 if isMinus {
+                    
+                    /// ⚠️ 因为number要被赋值  Int(number * 10) - Int(value - min) >= Int.min
+                    /// 转化后就是 （Int.min + Int(value - min)）/ 10 >= number, 下边同理
                     isValid = (Int.min + Int(value - min)) / 10 <= number
                     if isValid {
                         number = Int(number * 10) - Int(value - min)

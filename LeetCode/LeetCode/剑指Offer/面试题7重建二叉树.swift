@@ -66,6 +66,7 @@ struct Topic7 {
         let rInStart = lInEnd + 2
         let rInEnd = inEnd
         
+        // 看前序里面是否有右子树
         if leftChildLength < preEnd - preStart {
             rootTree.right = _constructTree(with: preorder, preStart: rPreStart, preEnd: rPreEnd, inorder: inorder, inStart: rInStart, inEnd: rInEnd)
         }

@@ -33,7 +33,7 @@ struct Topic20 {
             isNumber = scanUsignInteger(string: string, index: &index) || isNumber
         }
         
-        // e只能在小数点后面，科学技术法
+        // e只能在小数点后面，科学计数法
         if index < string.endIndex, ["e", "E"].contains(string[index]) {
             index = string.index(after: index)
             isNumber = scanInteger(string: string, index: &index) && isNumber
@@ -51,9 +51,9 @@ struct Topic20 {
     static func scanUsignInteger(string: String, index: inout String.Index) -> Bool {
         
         let tempIndex = index
-        let charZeroAssciValue = Character("0").asciiValue!
-        let charnineAssciValue = Character("9").asciiValue!
-        while index < string.endIndex, let assc1 = string[index].asciiValue, assc1 >= charZeroAssciValue, let assc2 = string[index].asciiValue, assc2 <= charnineAssciValue {
+        let charZeroAssciValue = Character("0")
+        let charnineAssciValue = Character("9")
+        while index < string.endIndex, string[index] >= charZeroAssciValue, string[index] <= charnineAssciValue {
             index = string.index(after: index)
         }
         return string.distance(from: tempIndex, to: index) > 0

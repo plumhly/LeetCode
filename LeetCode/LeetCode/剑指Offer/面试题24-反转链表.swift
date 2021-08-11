@@ -25,19 +25,18 @@ struct Topic24 {
         }
         
         var node = node
-        var newNode: Node? = nil
+        var preNode: Node? = nil
         
         while node != nil {
             let tempNode = node?.next
-            node?.next = nil
             
             // 这里是重点
-            node?.next = newNode
-            newNode = node
+            node?.next = preNode
+            preNode = node
             
             node = tempNode
         }
-        return newNode
+        return preNode
     }
     
     static func test() {

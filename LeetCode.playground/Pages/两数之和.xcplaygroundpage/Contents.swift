@@ -44,3 +44,9 @@ let index1 = value.index(after: value.startIndex)
 print(value[value.startIndex...index1])
 
 //floor(1.3)
+
+do {
+    let c1 = Character("0")
+    let c2 = Character("0")
+    print(c1 == c2)
+}

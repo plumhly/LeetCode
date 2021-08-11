@@ -58,6 +58,7 @@ struct Topic14 {
         
         for i in 4...length {
             var max = 0
+            /// ⚠️ 1...i/2是因为类似：1+3 = 4 ，3+1 = 4， 重复计算了
             for j in 1...i/2 {
                 let value = result[j] * result[i-j]
                 if max < value {
@@ -80,6 +81,7 @@ struct Topic14 {
             return 2
         }
         
+        /// 当n>=5时，尽可能剪3，但是如果最后是4，那就要转成2x2
         var timeOf3 = length / 3
         if length - timeOf3 * 3 == 1 { //表示可以组合成4，而4 的最大 2 * 2
             timeOf3 -= 1

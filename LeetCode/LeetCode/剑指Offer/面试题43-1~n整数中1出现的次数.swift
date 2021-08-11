@@ -59,6 +59,7 @@ struct Topic43 {
             }
         }
         
+        /// length - 1是除去最高位的剩下位数
         let otherNumber = Int(first) * (length - 1) * baseOf10(length - 2)
         
         // 移除高位递归计算

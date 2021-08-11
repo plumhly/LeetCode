@@ -27,25 +27,11 @@ struct Topic19 {
         
         if stringIndex == string.endIndex && pattern.endIndex == patternIndex {
             return true
-        } else if stringIndex == string.endIndex || patternIndex == pattern.endIndex {
+        } else if stringIndex != string.endIndex && patternIndex == pattern.endIndex { /// ab abb*, 模式可以比字符串长
             return false
         }
         
         let patternNextIndex = pattern.index(after: patternIndex)
-    
-        if patternNextIndex == pattern.endIndex {
-            let stringDistance = string.distance(from: stringIndex, to: string.endIndex)
-            
-            if stringDistance == 1 {
-                if string[stringIndex] == pattern[patternIndex] || pattern[patternNextIndex] == "." {
-                    return true
-                } else {
-                    return false
-                }
-            } else {
-                return false
-            }
-        }
         
         if pattern[patternNextIndex] == "*" {
             if string[stringIndex] == pattern[patternIndex] || (pattern[patternIndex] == "." && stringIndex != string.endIndex) {

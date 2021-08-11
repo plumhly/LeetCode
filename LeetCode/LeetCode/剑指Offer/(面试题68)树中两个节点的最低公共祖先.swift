@@ -57,10 +57,7 @@ struct Topic68 {
             return true
         }
         
-        var isContain = root === node
-        if isContain {
-            return true
-        }
+        var isContain = false
         
         if let children = root.children {
             for value in children {

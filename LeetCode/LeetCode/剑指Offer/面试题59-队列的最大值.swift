@@ -32,12 +32,17 @@ struct Topic59 {
      */
     struct Topic1 {
         static func findMaxValueInWindow(array: [Int], size: Int) -> [Int]? {
-            guard array.count >= size else {
+            
+            /// ⚠️ size > 0
+            guard array.count >= size, size > 0 else {
                 return nil
             }
             
             var indexes: [Int] = []
             for i in 0..<size {
+                /// ⚠️
+                /// 1 last
+                /// 2 >=
                 while !indexes.isEmpty, let last = indexes.last, array[i] >= array[last] {
                     indexes.removeLast()
                 }

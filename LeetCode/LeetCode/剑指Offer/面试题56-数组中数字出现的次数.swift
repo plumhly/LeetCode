@@ -96,6 +96,8 @@ struct Topic56 {
             var resultArray = Array(repeating: 0, count: size)
             array.forEach { value in
                 var mask = 1
+                
+                /// ⚠️这里是从把最低位存在63，把最高位存在0
                 for i in (0..<size).reversed() {
                     let bit = value & mask
                     //* & 不只是 0 1， 因为前面还有位
@@ -108,6 +110,7 @@ struct Topic56 {
             
             var result = 0
             for i in 0..<size {
+                /// ⚠️0是最高位
                 result <<= 1
                 result += resultArray[i] % 3
             }

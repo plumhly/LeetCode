@@ -48,8 +48,17 @@ struct Topic33 {
             }
         }
         
-        let result = isSearchBinaryPostOrder(array: array, start: start, end: startIndex - 1) && isSearchBinaryPostOrder(array: array, start: startIndex, end: end - 1)
-        return result
+        var leftValid = true
+        if startIndex > start {
+            leftValid = isSearchBinaryPostOrder(array: array, start: start, end: startIndex - 1)
+        }
+        
+        var rightValid = true
+        if startIndex < end {
+            rightValid = isSearchBinaryPostOrder(array: array, start: startIndex, end: end - 1)
+        }
+        
+        return leftValid && rightValid
     }
     
     static func test() {
