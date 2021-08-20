@@ -50,3 +50,68 @@ do {
     let c2 = Character("0")
     print(c1 == c2)
 }
+
+do {
+    func findPrimeNumbers(before value: Int) -> [Int] {
+        guard value > 2 else {
+            return value == 2 ? [2] : []
+        }
+        
+        var result = [2]
+        
+        for i in stride(from: 3, through: value, by: 2) {
+            if (i == 3) {
+                result.append(i)
+            } else {
+                let finalValue = Int(sqrt(Double(i)))
+                var isPrime = true
+                for j in 1..<result.count where result[j] <= finalValue {
+                    if i % result[j] == 0 {
+                        isPrime = false
+                        break
+                    }
+                }
+                
+                if isPrime {
+                    result.append(i)
+                }
+            }
+        }
+        
+        return result
+    }
+    
+    func findPrimeNumbers1(before value: Int) -> [Int] {
+        guard value > 2 else {
+            return value == 2 ? [2] : []
+        }
+        
+        var prime = Array<Bool>(repeating: true, count: value + 1)
+        prime[0] = false
+        prime[1] = false
+        
+        var result: [Int] = []
+        for i in 2...value {
+            if prime[i] {
+                result.append(i)
+            }
+            
+            for j in result where i * j <= value {
+                prime[i * j] = false
+                if i % j == 0 {
+                    break
+                }
+            }
+        }
+        
+        return result
+    }
+    
+    func test() {
+        print(findPrimeNumbers(before: 100))
+        print(findPrimeNumbers1(before: 100))
+    }
+    
+    test()
+}
+

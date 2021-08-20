@@ -1774,3 +1774,91 @@ extension Exercise {
         }
     }
 }
+
+
+extension Exercise {
+    struct E21_8_16 {
+        static func print(tree: Tree?) {
+            guard let root = tree else {
+                return
+            }
+            var queue = MyQueue<Tree>()
+            
+            var result = ""
+            
+            var count = 1
+            var nextCount = 0
+            queue.enqueue(element: root)
+            while !queue.isEmpty {
+                let t = queue.dequeue()!
+                result.append("\(t.value)")
+                count -= 1
+                
+                if let leftTree = t.left {
+                    nextCount += 1
+                    queue.enqueue(element: leftTree)
+                }
+                
+                if let rightTree = t.right {
+                    nextCount += 1
+                    queue.enqueue(element: rightTree)
+                }
+                
+                if count == 0 {
+                    result.append("\n")
+                    count = nextCount
+                    nextCount = 0
+                    continue
+                }
+
+            }
+            
+            Swift.print(result)
+        }
+        
+        static func test() {
+            let t = Tree(value: 1, left: Tree(value: 2, left: Tree(value: 4)), right: Tree(value: 3, left: Tree(value: 5)))
+            print(tree: t)
+        }
+    }
+}
+
+extension Exercise {
+    struct E_21_8_17 {
+        static func findKMaxValue(in tree: Tree?, k: Int) -> Int? {
+            guard let t = tree, k > 0 else {
+                return nil
+            }
+            
+            var k = k
+            return _findMaxNode(in: t, k: &k)?.value
+        }
+        
+        static func _findMaxNode(in tree: Tree, k: inout Int) -> Tree? {
+            var targe: Tree?
+            
+            if let left = tree.left {
+                targe = _findMaxNode(in: left, k: &k)
+            }
+            
+            if targe == nil {
+                if k == 1 {
+                    return tree
+                }
+                
+                k -= 1
+            }
+            
+            if targe == nil, let right = tree.right {
+                targe = _findMaxNode(in: right, k: &k)
+            }
+            
+            return targe
+        }
+        
+        static func test() {
+            let t = Tree(value: 5, left: Tree(value: 3, left: Tree(value: 2), right: Tree(value: 4)), right: Tree(value: 6))
+            print(findKMaxValue(in: t, k: 3))
+        }
+    }
+}

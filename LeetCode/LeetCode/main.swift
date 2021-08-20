@@ -315,4 +315,6 @@ struct Fast {
 //Exercise.E21_7_31.test()
 //Topic24.test()
 //Exercise.E21_8_7.test()
-Exercise.E21_8_8.test()
+//Exercise.E21_8_8.test()
+//Exercise.E21_8_16.test()
+Exercise.E_21_8_17.test()
